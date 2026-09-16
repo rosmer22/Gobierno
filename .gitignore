@@ -1,0 +1,13 @@
+# Entorno virtual
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db

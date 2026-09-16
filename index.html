@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPSEL S.A. | Gobierno y Gestión de TI — Grupo B (SIS) 2026-II</title>
+<meta name="description" content="Landing page EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque. Curso universitario: Gobierno y Gestión de Tecnologías de Información. Grupo B (SIS) 2026-II.">
+<link rel="icon" href="img/Epsel_350_240%20.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- ============ ICONOS Y LOGOS (SVG reutilizables) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Iconos de menú -->
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21h-6v-6h-6v6H3z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9.5 21v-5h5v5M9 10h.01M12 10h.01M15 10h.01M9 14h.01M15 14h.01"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4M9.2 15.5l2 2 3.6-4"/></symbol>
+    <symbol id="i-images" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.4" cy="9.6" r="1.6"/><path d="M3 16.5l5-5 4 4 3-3 6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5S5 15.4 5 10a7 7 0 1 1 14 0c0 5.4-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M8.4 12.2l2.5 2.6 4.8-5.2"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1.5 12S5.8 5 12 5s10.5 7 10.5 7-4.3 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-1.5-2.2-3.2-3.3-5.2-3.3a4.2 4.2 0 1 0 0 8.4c2 0 3.7-1.1 5.2-3.3m0 0c1.5 2.2 3.2 3.3 5.2 3.3a4.2 4.2 0 1 0 0-8.4c-2 0-3.7 1.1-5.2 3.3z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.7a4 4 0 0 1 0 7.7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="m2.5 7 9.5 6 9.5-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 8.8h2.6V5.6h-2.6c-2.2 0-3.9 1.7-3.9 3.9v1.7H8v3.2h2.6v5.6h3.3v-5.6h2.4l.6-3.2h-3v-1.4c0-.5.3-.8.6-.8z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12.5" rx="3.5"/><path d="m10 9.5 5 2.8-5 2.8z" fill="#fff"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.3 1-2.4 2.4-2.4S17 12.1 17 13.4V17" stroke-width="1.6"/><circle cx="8" cy="7.2" r="0.2" fill="#fff"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5C15 6.5 19 10.3 19 14.2a7 7 0 1 1-14 0C5 10.3 9 6.5 12 2.5z"/><path d="M8 12.5h8" stroke="#F7B500" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5.5 5.5l13 13M18.5 5.5l-13 13"/></symbol>
+  </defs>
+</svg>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <img class="logo" src="img/Epsel_350_240%20.png" alt="EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque">
+      <span class="brand-txt">
+        <strong>Empresa Prestadora de Servicios de Saneamiento de Lambayeque</strong>
+        <span>EPSEL S.A.</span>
+        <em>“Agua que nos une para un mejor desarrollo.”</em>
+      </span>
+    </a>
+
+    <div class="header-right">
+      <nav class="main-nav" id="mainNav" aria-label="Menú principal">
+        <a href="#inicio" class="active"><svg class="ic"><use href="#i-home"/></svg> Inicio</a>
+        <a href="#nosotros"><svg class="ic"><use href="#i-building"/></svg> Nosotros</a>
+        <a href="#actividades"><svg class="ic"><use href="#i-calendar"/></svg> Actividades</a>
+        <a href="#galeria"><svg class="ic"><use href="#i-images"/></svg> Galería</a>
+        <a href="#ubicacion"><svg class="ic"><use href="#i-pin"/></svg> Ubicación</a>
+        <a href="#contacto"><svg class="ic"><use href="#i-phone"/></svg> Contacto</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="usat">
+          <img class="logo" src="img/logousat.jpg" alt="USAT — Facultad de Ingeniería">
+          <span><b>USAT</b><span>Facultad de Ingeniería</span></span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg class="ic i-menu"><use href="#i-menu"/></svg>
+          <svg class="ic i-x"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="inicio">
+  <div class="hero-photo" role="img" aria-label="Fotografía aérea de una planta de tratamiento de agua"></div>
+  <!-- ilustración de respaldo: planta de tratamiento vista aérea -->
+  <svg class="hero-art" viewBox="0 0 1920 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06284F"/><stop offset="1" stop-color="#0A3D78"/></linearGradient>
+      <linearGradient id="htank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1FA2FF"/><stop offset="1" stop-color="#0057B8"/></linearGradient>
+    </defs>
+    <rect width="1920" height="820" fill="url(#hbg)"/>
+    <rect y="430" width="1920" height="390" fill="#0E4A8F" opacity=".4"/>
+    <rect x="150" y="392" width="1640" height="20" rx="10" fill="#0D2E55" stroke="#123A66" stroke-width="4"/>
+    <path d="M150 402 Q 420 350 760 402 T 1770 402" fill="none" stroke="#123A66" stroke-width="8"/>
+    <g>
+      <rect x="180" y="470" width="820" height="210" rx="22" fill="#0B3F7A" stroke="#EAF6FF" stroke-opacity=".4" stroke-width="2"/>
+      <g stroke="#EAF6FF" stroke-opacity=".32" stroke-width="2">
+        <line x1="280" y1="470" x2="280" y2="680"/><line x1="380" y1="470" x2="380" y2="680"/>
+        <line x1="480" y1="470" x2="480" y2="680"/><line x1="580" y1="470" x2="580" y2="680"/>
+        <line x1="680" y1="470" x2="680" y2="680"/><line x1="780" y1="470" x2="780" y2="680"/>
+        <line x1="880" y1="470" x2="880" y2="680"/>
+      </g>
+      <line x1="180" y1="575" x2="1000" y2="575" stroke="#EAF6FF" stroke-opacity=".4" stroke-width="2"/>
+    </g>
+    <g>
+      <circle cx="1330" cy="500" r="200" fill="url(#htank)" stroke="#EAF6FF" stroke-opacity=".5" stroke-width="2.5"/>
+      <circle cx="1330" cy="500" r="168" fill="none" stroke="#EAF6FF" stroke-opacity=".45" stroke-width="2"/>
+      <circle cx="1330" cy="500" r="132" fill="none" stroke="#EAF6FF" stroke-opacity=".5" stroke-width="2"/>
+      <circle cx="1330" cy="500" r="92" fill="none" stroke="#EAF6FF" stroke-opacity=".45" stroke-width="2"/>
+      <circle cx="1330" cy="500" r="46" fill="#F7B500" opacity=".85"/>
+      <circle cx="1330" cy="500" r="14" fill="#EAF6FF" opacity=".7"/>
+    </g>
+    <g>
+      <circle cx="1690" cy="360" r="140" fill="url(#htank)" stroke="#EAF6FF" stroke-opacity=".5" stroke-width="2.5"/>
+      <circle cx="1690" cy="360" r="112" fill="none" stroke="#EAF6FF" stroke-opacity=".45" stroke-width="2"/>
+      <circle cx="1690" cy="360" r="80" fill="none" stroke="#EAF6FF" stroke-opacity=".5" stroke-width="2"/>
+      <circle cx="1690" cy="360" r="34" fill="#F7B500" opacity=".85"/>
+    </g>
+    <g stroke="#F7B500" stroke-width="14" stroke-linecap="round" fill="none" opacity=".92">
+      <path d="M1000 545 L1180 545 L1180 430 L1330 430"/>
+      <path d="M1000 610 L1120 610 L1120 290 L1690 290"/>
+      <path d="M1330 500 L1560 360"/>
+    </g>
+    <g fill="#0F5A2E">
+      <circle cx="260" cy="430" r="14"/><circle cx="300" cy="440" r="10"/><circle cx="230" cy="448" r="11"/>
+      <circle cx="520" cy="420" r="12"/><circle cx="700" cy="445" r="13"/><circle cx="850" cy="430" r="10"/>
+      <circle cx="1200" cy="300" r="13"/><circle cx="1240" cy="320" r="10"/><circle cx="1560" cy="540" r="12"/>
+    </g>
+  </svg>
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-hand"><u>“Agua que nos une para un mejor mañana.”</u></div>
+    <div class="hero-grid">
+      <div>
+        <span class="hero-tag"><i></i> Curso Universitario</span>
+        <h1>Gobierno y Gestión de <span class="hl">Tecnologías de Información</span></h1>
+        <div class="hero-course">
+          <span class="chip"><svg class="ic ic--fill"><use href="#i-users"/></svg> Grupo B (SIS)</span>
+          <p>2026-II</p>
+        </div>
+        <p class="hero-desc">“Aplicando la tecnología para una gestión eficiente de los servicios de agua potable y alcantarillado en beneficio de la región Lambayeque.”</p>
+        <div class="hero-cta">
+          <a href="#actividades" class="btn btn-primary"><svg class="ic"><use href="#i-ext"/></svg> Ver Informe</a>
+          <a href="#galeria" class="btn btn-ghost"><svg class="ic"><use href="#i-images"/></svg> Presentación</a>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>Nuestro compromiso</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-drop"/></svg> Agua potable con calidad</li>
+          <li><svg class="ic"><use href="#i-users"/></svg> Compromiso con la comunidad</li>
+          <li><svg class="ic"><use href="#i-infinity"/></svg> Gestión sostenible del recurso</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Transparencia y buen gobierno</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <div class="hero-waves" aria-hidden="true">
+    <svg viewBox="0 0 1920 130" preserveAspectRatio="none">
+      <g class="wave-a">
+        <path d="M0 70 C 240 20 480 110 720 70 S 1200 20 1440 70 S 2000 110 2240 70 L 2240 130 L 0 130 Z" fill="var(--fondo)" opacity=".55"/>
+      </g>
+      <g class="wave-b">
+        <path d="M0 90 C 240 40 480 130 720 90 S 1200 40 1440 90 S 2000 130 2240 90 L 2240 130 L 0 130 Z" fill="#fff"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============================ ACTIVIDADES ============================ -->
+<section class="actividades" id="actividades">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Portafolio del curso</span>
+      <h2 class="sec-title">Actividades del curso universitario</h2>
+      <p class="sec-sub">Gobierno y Gestión de Tecnologías de Información · Grupo B (SIS) 2026-II</p>
+    </div>
+    <div class="act-grid">
+      <article class="act-card reveal"><div class="act-ico"><svg class="ic"><use href="#i-home"/></svg></div><h3>Actividad 1</h3><button class="act-btn" aria-label="Ir a Actividad 1"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+      <article class="act-card reveal" style="transition-delay:.06s"><div class="act-ico"><svg class="ic"><use href="#i-building"/></svg></div><h3>Actividad 2</h3><button class="act-btn" aria-label="Ir a Actividad 2"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+      <article class="act-card reveal" style="transition-delay:.12s"><div class="act-ico"><svg class="ic"><use href="#i-calendar"/></svg></div><h3>Actividad 3</h3><button class="act-btn" aria-label="Ir a Actividad 3"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+      <article class="act-card reveal" style="transition-delay:.18s"><div class="act-ico"><svg class="ic"><use href="#i-images"/></svg></div><h3>Actividad 4</h3><button class="act-btn" aria-label="Ir a Actividad 4"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+      <article class="act-card reveal" style="transition-delay:.24s"><div class="act-ico"><svg class="ic"><use href="#i-pin"/></svg></div><h3>Actividad 5</h3><button class="act-btn" aria-label="Ir a Actividad 5"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+      <article class="act-card reveal" style="transition-delay:.30s"><div class="act-ico"><svg class="ic"><use href="#i-phone"/></svg></div><h3>Actividad 6</h3><button class="act-btn" aria-label="Ir a Actividad 6"><svg class="ic"><use href="#i-arrow"/></svg></button></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INFORMACIÓN INSTITUCIONAL ============================ -->
+<section class="institucional" id="nosotros">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">EPSEL S.A.</span>
+      <h2 class="sec-title">Información institucional</h2>
+      <p class="sec-sub">Identidad, misión, ubicación y canales oficiales de la empresa.</p>
+    </div>
+
+    <div class="info-grid">
+      <article class="info-card reveal">
+        <div class="info-ico"><svg class="ic"><use href="#i-target"/></svg></div>
+        <h3>Nuestra Misión</h3>
+        <blockquote>“Brindar servicios de saneamiento de agua potable y alcantarillado con calidad, continuidad y eficiencia, contribuyendo al bienestar de la población de Lambayeque.”</blockquote>
+      </article>
+
+      <article class="info-card reveal" style="transition-delay:.08s">
+        <div class="info-ico"><svg class="ic"><use href="#i-eye"/></svg></div>
+        <h3>Nuestra Visión</h3>
+        <blockquote>“Ser una empresa líder y referente en servicios de saneamiento mediante innovación tecnológica, responsabilidad social y sostenibilidad.”</blockquote>
+      </article>
+
+      <article class="info-card map-card reveal" id="ubicacion">
+        <div class="map-wrap">
+          <!-- Mapa estilizado tipo Google Maps con marcador rojo -->
+          <svg viewBox="0 0 560 260" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mapa de Chiclayo, Av. Sáenz Peña 468">
+            <defs>
+              <pattern id="blocks" width="70" height="55" patternUnits="userSpaceOnUse">
+                <rect width="70" height="55" fill="#E7F0F6"/><rect x="6" y="6" width="58" height="43" rx="5" fill="#F4F9FC" stroke="#D9E7F1"/>
+              </pattern>
+              <radialGradient id="markGrad" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#FF5A5A"/><stop offset="1" stop-color="#D40F1F"/></radialGradient>
+            </defs>
+            <rect width="560" height="260" fill="#E7F0F6"/>
+            <rect width="560" height="260" fill="url(#blocks)"/>
+            <path d="M0 150 C 120 140 200 60 310 40 S 470 120 560 96" fill="none" stroke="#A8DCF5" stroke-width="20" opacity=".75"/>
+            <path d="M0 150 C 120 140 200 60 310 40 S 470 120 560 96" fill="none" stroke="#D5EEFA" stroke-width="12" opacity=".9"/>
+            <g stroke="#FFFFFF" stroke-width="11" stroke-linecap="round">
+              <path d="M40 30 H 530 M0 110 H 560 M60 260 V 30 M230 260 V 10 M400 260 V 30"/>
+            </g>
+            <g stroke="#C9DAE6" stroke-width="1" stroke-dasharray="8 10" opacity=".55">
+              <path d="M40 30 H 530 M0 110 H 560 M60 260 V 30 M230 260 V 10 M400 260 V 30"/>
+            </g>
+            <rect x="330" y="150" width="150" height="70" rx="12" fill="#C9E7BE" opacity=".85"/>
+            <rect x="80" y="180" width="110" height="50" rx="10" fill="#C9E7BE" opacity=".7"/>
+            <g>
+              <circle cx="298" cy="128" r="26" fill="#D40F1F" opacity=".18"><animate attributeName="r" values="26;40;26" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;0;.2" dur="2.6s" repeatCount="indefinite"/></circle>
+              <path d="M298 128c0-13 10.6-23.5 23.5-23.5S345 115 345 128c0 17.6-23.5 42-23.5 42s-23.5-24.4-23.5-42z" fill="url(#markGrad)" stroke="#fff" stroke-width="3"/>
+              <circle cx="321.5" cy="128" r="9" fill="#fff"/>
+            </g>
+            <rect x="352" y="148" width="150" height="34" rx="17" fill="rgba(255,255,255,.92)"/>
+            <text x="427" y="170" font-family="Poppins,Arial" font-size="13" font-weight="700" fill="#0E2A47" text-anchor="middle">EPSEL · Sáenz Peña 468</text>
+          </svg>
+          <div class="map-hand">¡Aquí estamos! 📍</div>
+        </div>
+        <div class="map-body">
+          <h3>¿Dónde nos ubicamos?</h3>
+          <p class="map-address"><svg class="ic"><use href="#i-pin"/></svg> Av. Sáenz Peña N.º 468, Chiclayo, Lambayeque, Perú.</p>
+          <a class="btn-map" href="https://www.google.com/maps/search/?api=1&query=Av.+S%C3%A1enz+Pe%C3%B1a+468+Chiclayo+Lambayeque+Per%C3%BA" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ext"/></svg> Ver en Google Maps</a>
+        </div>
+      </article>
+
+      <article class="info-card reveal" style="transition-delay:.08s" id="contacto">
+        <div class="info-ico"><svg class="ic"><use href="#i-phone"/></svg></div>
+        <h3>Contáctanos</h3>
+        <div class="contact-rows">
+          <div class="contact-row">
+            <span class="c-ico"><svg class="ic"><use href="#i-phone"/></svg></span>
+            <span><b>Teléfono</b><a href="tel:(074)606262">(074) 606262</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="c-ico"><svg class="ic"><use href="#i-mail"/></svg></span>
+            <span><b>Correo</b><a href="mailto:informes@epsel.com.pe">informes@epsel.com.pe</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="c-ico"><svg class="ic"><use href="#i-clock"/></svg></span>
+            <span><b>Atención</b><span>Lunes a Viernes · 8:00 a.m. – 5:00 p.m.</span></span>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg class="ic ic--fill"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic ic--fill"><use href="#i-youtube"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="ic ic--fill"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INDICADORES ============================ -->
+<section class="indicadores" id="galeria">
+  <div class="top-fill"></div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Impacto en cifras</span>
+      <h2 class="sec-title">Una gestión que se mide en resultados</h2>
+      <p class="sec-sub">Indicadores de cobertura e infraestructura de saneamiento en Lambayeque.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-item reveal">
+        <svg class="ic"><use href="#i-users"/></svg>
+        <span class="ind-num" data-target="203542">0</span>
+        <p class="ind-label">Conexiones administradas</p>
+      </div>
+      <div class="ind-item reveal" style="transition-delay:.08s">
+        <svg class="ic"><use href="#i-pin"/></svg>
+        <span class="ind-num" data-target="26">0</span>
+        <p class="ind-label">Localidades atendidas</p>
+      </div>
+      <div class="ind-item reveal" style="transition-delay:.16s">
+        <svg class="ic"><use href="#i-drop"/></svg>
+        <span class="ind-num" data-target="46">0</span>
+        <p class="ind-label">Pozos tubulares</p>
+      </div>
+      <div class="ind-item reveal" style="transition-delay:.24s">
+        <svg class="ic"><use href="#i-check"/></svg>
+        <span class="ind-num" data-target="32">0</span>
+        <p class="ind-label">Pozos operativos</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+      <path d="M0 30 C 200 70 420 0 720 28 S 1240 70 1440 26 L 1440 70 L 0 70 Z" fill="var(--oscuro)"/>
+    </svg>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+      <path d="M0 30 C 200 70 420 0 720 28 S 1240 70 1440 26 L 1440 70 L 0 70 Z" fill="var(--oscuro)"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="logo" src="img/Epsel_350_240%20.png" alt="EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque">
+        <h4>Empresa Prestadora de Servicios de Saneamiento de Lambayeque S.A.</h4>
+        <p class="sl">“Agua que nos une para un mejor desarrollo.”</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Enlaces</h5>
+        <ul class="footer-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Nuestra esencia</h5>
+        <p class="footer-sdv">Servicio <b>·</b> Vida <b>·</b> Desarrollo</p>
+        <ul class="footer-contact">
+          <li><svg class="ic"><use href="#i-pin"/></svg> Chiclayo, Lambayeque, Perú</li>
+          <li><svg class="ic"><use href="#i-drop"/></svg> Agua potable y alcantarillado para la región</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul class="footer-contact">
+          <li><svg class="ic"><use href="#i-phone"/></svg> (074) 606262</li>
+          <li><svg class="ic"><use href="#i-mail"/></svg> informes@epsel.com.pe</li>
+          <li><svg class="ic"><use href="#i-clock"/></svg> Lun – Vie · 8:00 a.m. – 5:00 p.m.</li>
+        </ul>
+        <div class="social-row" style="margin-top:18px">
+          <a href="#" aria-label="Facebook"><svg class="ic ic--fill"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic ic--fill"><use href="#i-youtube"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="ic ic--fill"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="footer-copy">© 2026 EPSEL S.A. Todos los derechos reservados.</p>
+      <p class="footer-hand">Hecho por los truki18 👑</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

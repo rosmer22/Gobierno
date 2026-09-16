@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe de Actividad 1 — Diseño de la Formulación Estratégica</title>
+<link rel="icon" href="img/Epsel_350_240%20.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- ============ ICONOS Y LOGOS (SVG reutilizables) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21h-6v-6h-6v6H3z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9.5 21v-5h5v5M9 10h.01M12 10h.01M15 10h.01M9 14h.01M15 14h.01"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4M9.2 15.5l2 2 3.6-4"/></symbol>
+    <symbol id="i-images" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.4" cy="9.6" r="1.6"/><path d="M3 16.5l5-5 4 4 3-3 6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5S5 15.4 5 10a7 7 0 1 1 14 0c0 5.4-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M8.4 12.2l2.5 2.6 4.8-5.2"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1.5 12S5.8 5 12 5s10.5 7 10.5 7-4.3 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M12 12c-1.5-2.2-3.2-3.3-5.2-3.3a4.2 4.2 0 1 0 0 8.4c2 0 3.7-1.1 5.2-3.3m0 0c1.5 2.2 3.2 3.3 5.2 3.3a4.2 4.2 0 1 0 0-8.4c-2 0-3.7 1.1-5.2 3.3z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.7a4 4 0 0 1 0 7.7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="m2.5 7 9.5 6 9.5-6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 8.8h2.6V5.6h-2.6c-2.2 0-3.9 1.7-3.9 3.9v1.7H8v3.2h2.6v5.6h3.3v-5.6h2.4l.6-3.2h-3v-1.4c0-.5.3-.8.6-.8z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12.5" rx="3.5"/><path d="m10 9.5 5 2.8-5 2.8z" fill="#fff"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.6c0-1.3 1-2.4 2.4-2.4S17 12.1 17 13.4V17" stroke-width="1.6"/><circle cx="8" cy="7.2" r="0.2" fill="#fff"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5C15 6.5 19 10.3 19 14.2a7 7 0 1 1-14 0C5 10.3 9 6.5 12 2.5z"/><path d="M8 12.5h8" stroke="#F7B500" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5.5 5.5l13 13M18.5 5.5l-13 13"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <img class="logo" src="img/Epsel_350_240%20.png" alt="EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque">
+      <span class="brand-txt">
+        <strong>Empresa Prestadora de Servicios de Saneamiento de Lambayeque</strong>
+        <span>EPSEL S.A.</span>
+        <em>“Agua que nos une para un mejor desarrollo.”</em>
+      </span>
+    </a>
+
+    <div class="header-right">
+      <nav class="main-nav" id="mainNav" aria-label="Menú principal">
+        <a href="#inicio" class="active"><svg class="ic"><use href="#i-home"/></svg> Inicio</a>
+        <a href="#externo"><svg class="ic"><use href="#i-building"/></svg> Análisis externo</a>
+        <a href="#interno"><svg class="ic"><use href="#i-calendar"/></svg> Análisis interno</a>
+        <a href="#estrategias"><svg class="ic"><use href="#i-target"/></svg> Estrategias</a>
+        <a href="#conclusiones"><svg class="ic"><use href="#i-check"/></svg> Conclusiones</a>
+        <a href="#anexo"><svg class="ic"><use href="#i-images"/></svg> Anexo</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="usat">
+          <img class="logo" src="img/logousat.jpg" alt="USAT — Facultad de Ingeniería">
+          <span><b>USAT</b><span>Facultad de Ingeniería</span></span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg class="ic i-menu"><use href="#i-menu"/></svg>
+          <svg class="ic i-x"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+<section class="hero" id="inicio">
+  <div class="container hero-inner">
+    <p class="hero-univ">Universidad Católica Santo Toribio de Mogrovejo</p>
+    <p class="hero-fac">Facultad de Ingeniería · Escuela de Ingeniería de Sistemas y Computación</p>
+    <h1>Informe de Actividad 1 — Diseño de la Formulación Estratégica</h1>
+    <p class="hero-sub">Gobierno y Gestión de Tecnologías de Información · Grupo B (SIS) · 2026-II</p>
+    <div class="hero-grid">
+      <div class="hero-card"><span class="lbl">Docente</span><span class="val">ROJAS CERNA, MIGUEL ANGEL</span></div>
+      <div class="hero-card"><span class="lbl">Curso</span><span class="val">GOBIERNO Y GESTIÓN DE TECNOLOGÍAS DE INFORMACIÓN</span></div>
+      <div class="hero-card"><span class="lbl">Semestre académico</span><span class="val">2026-II</span></div>
+      <div class="hero-card"><span class="lbl">Integrantes</span><span class="val">Maguiña Sánchez, Roosmer · Merino Mayra, Anghelo Jamir · Sandoval Mija Carlos · Fiestas Fiestas,José · Torres Villarreal,</span></div>
+    </div>
+    <p class="hero-lugar">Lambayeque, Chiclayo - Perú 2026</p>
+  </div>
+  <div class="hero-waves" aria-hidden="true">
+    <svg viewBox="0 0 1920 130" preserveAspectRatio="none">
+      <g class="wave-a">
+        <path d="M0 70 C 240 20 480 110 720 70 S 1200 20 1440 70 S 2000 110 2240 70 L 2240 130 L 0 130 Z" fill="var(--fondo)" opacity=".55"/>
+      </g>
+      <g class="wave-b">
+        <path d="M0 90 C 240 40 480 130 720 90 S 1200 40 1440 90 S 2000 130 2240 90 L 2240 130 L 0 130 Z" fill="#fff"/>
+      </g>
+    </svg>
+  </div>
+</section>
+<div class="contenido">
+
+<!-- ===================== INTRODUCCIÓN ===================== -->
+<h2 id="intro">INTRODUCCIÓN</h2>
+<p class="lead">La administración estratégica permite a las organizaciones analizar su entorno, definir objetivos de mediano y largo plazo y coordinar sus recursos para lograr resultados sostenibles. Este informe aplica ese enfoque a EPSEL S.A., empresa pública de saneamiento de Lambayeque, con base en su Plan Estratégico Institucional (PEI 2024-2028).</p>
+
+<div class="grid grid-3">
+  <div class="card c-azul">
+    <span class="lbl">Contexto internacional</span>
+    <p>OCDE y Banco Mundial: la gobernanza, planificación estratégica y evaluación por indicadores mejoran la eficiencia operativa, la sostenibilidad financiera y la confianza de los usuarios, y reducen pérdidas frente al cambio climático.</p>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Contexto nacional</span>
+    <p>SUNASS y OTASS impulsan planificación, transparencia y mejora continua en las EPS. EPSEL se encuentra en el <b>Régimen de Apoyo Transitorio (OTASS)</b>, por lo que el fortalecimiento institucional es prioritario.</p>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Contexto regional</span>
+    <p>EPSEL presta los servicios de agua potable y alcantarillado en las provincias de <b>Chiclayo, Lambayeque y Ferreñafe</b>, sustentando su gestión en instrumentos de planeamiento, rendición de cuentas, integridad y transformación digital.</p>
+  </div>
+</div>
+
+<p class="lead">El propósito del informe es diagnosticar la situación estratégica de EPSEL mediante herramientas como el análisis PESTEL y matrices de evaluación, para identificar oportunidades, amenazas y proponer medidas de fortalecimiento.</p>
+
+<h3>Ficha de la empresa</h3>
+<table>
+<tr>
+  <th>Aspecto</th>
+  <th>Información</th>
+</tr>
+<tr><td>Razón Social</td><td>Empresa Prestadora de Servicios de Saneamiento de Lambayeque S.A.</td></tr>
+<tr><td>Sector</td><td>Servicios públicos de saneamiento</td></tr>
+<tr><td>Servicios principales</td><td>Agua potable, alcantarillado y potabilización del agua</td></tr>
+<tr><td>Mercado</td><td>Usuarios de Lambayeque</td></tr>
+<tr><td>Área de cobertura</td><td>Provincias y distritos de Lambayeque</td></tr>
+<tr><td>Regulador</td><td>SUNASS</td></tr>
+</table>
+
+<!-- ===================== ANÁLISIS EXTERNO ===================== -->
+<h2 id="externo">ANÁLISIS EXTERNO DE LA EMPRESA</h2>
+<p class="lead">El entorno de EPSEL se analiza con el método PESTEL, las cinco fuerzas de Porter y la matriz EFE.</p>
+
+<h3>2.1 Análisis PESTEL</h3>
+<div class="grid grid-3">
+  <div class="card c-azul">
+    <span class="lbl">a. Político</span>
+    <ul>
+      <li>Política de <b>acceso universal al saneamiento</b> (D.L. 1280 / D.S. 001-2025-VIVIENDA): prioriza ampliar cobertura y cerrar brechas → <b>oportunidad</b>.</li>
+      <li>Régimen de Apoyo Transitorio (OTASS): las decisiones del MVCS, Gobierno Regional y municipalidades favorecen o condicionan los proyectos.</li>
+    </ul>
+  </div>
+  <div class="card c-ambar">
+    <span class="lbl">b. Económico</span>
+    <ul>
+      <li>Financiamiento público (PNSU y OTASS) disponible para proyectos → <b>oportunidad</b>; su reducción retrasa obras.</li>
+      <li>Inflación y precios de insumos (energía, químicos, tuberías, combustibles) encarecen operación e inversión → <b>amenaza</b>.</li>
+      <li>Costo de la energía eléctrica por bombeo permanente → <b>amenaza</b>.</li>
+      <li>El costo y la disponibilidad del crédito definen oportunidad o amenaza.</li>
+    </ul>
+  </div>
+  <div class="card c-verde">
+    <span class="lbl">c. Social y cultural</span>
+    <ul>
+      <li>Crecimiento poblacional y expansión urbana: oportunidad de ampliar cobertura; amenaza si la infraestructura crece más lento.</li>
+      <li>Brechas de acceso: presión ciudadana que justifica inversión; amenaza si la red no responde.</li>
+      <li>Mayor exigencia de los usuarios (información, redes sociales, reclamos): presión por continuidad y calidad.</li>
+      <li>Cultura de uso responsable del agua: oportunidad (ahorro) o amenaza (consumo excesivo, conexiones clandestinas).</li>
+    </ul>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">d. Tecnológico</span>
+    <ul>
+      <li>Medidores ultrasónicos y macromedidores electromagnéticos: medición precisa del consumo y control de producción → <b>oportunidad</b>.</li>
+      <li>Telemetría y registradores de presión (Data Logger): monitoreo hidráulico en tiempo real → <b>oportunidad</b>.</li>
+      <li>Plataformas móviles y pago digital (app <b>Gotitas</b>): atención no presencial y mejor accesibilidad → <b>oportunidad</b>.</li>
+    </ul>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">e. Ecológico</span>
+    <ul>
+      <li>Fenómeno El Niño y lluvias intensas: daños y colapsos en plantas, redes y alcantarillado → <b>amenaza directa</b>.</li>
+      <li>Variabilidad climática y sequías: reducen la disponibilidad hídrica → amenaza a la continuidad.</li>
+      <li>Contaminación de fuentes (vertimientos, residuos, agricultura): encarece y complica la potabilización → amenaza.</li>
+    </ul>
+  </div>
+  <div class="card c-rosa">
+    <span class="lbl">f. Legal</span>
+    <ul>
+      <li>Ley del Servicio Universal de Agua Potable y Saneamiento (D.L. 1280): regula acceso, calidad, equidad y sostenibilidad.</li>
+      <li>Regulación y fiscalización de SUNASS (tarifas, metas, derechos del usuario): presión permanente sobre los indicadores.</li>
+      <li>Sistemas de gestión de calidad obligatorios (Ley 32041, 2025): mayores exigencias, pero oportunidad de estandarización y mejora continua.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>2.2 Análisis de la Industria (Cinco fuerzas de Porter)</h3>
+<div class="grid grid-3">
+  <div class="card c-verde">
+    <span class="lbl">Rivalidad · Nula</span>
+    <p>Monopolio natural regulado: EPSEL tiene exclusividad en 26 localidades. La presión proviene de SUNASS (supervisión y benchmarking), no de competidores.</p>
+  </div>
+  <div class="card c-verde">
+    <span class="lbl">Nuevos entrantes · Nula</span>
+    <p>Barreras legales, regulatorias y de gran capital (PTAP, redes, PTAR, reservorios) impiden competencia formal inmediata.</p>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">Proveedores · Alto</span>
+    <p>Dependencia de terceros en gestión comercial (Consorcio HCI-ARCAYA), insumos químicos y fondeo externo para inversión (PNSU S/ 49.17M y OTASS S/ 9.45M).</p>
+  </div>
+  <div class="card c-ambar">
+    <span class="lbl">Clientes · Bajo / Moderado</span>
+    <p>203,542 conexiones y morosidad de S/ 31.27M. El usuario residencial tiene poco poder; el no residencial puede sustituir con fuentes propias, pero EPSEL controla sus descargas (VMA).</p>
+  </div>
+  <div class="card c-ambar">
+    <span class="lbl">Sustitutos · Moderada</span>
+    <p>Fuente propia en clientes de alto consumo y abastecimiento alternativo en zonas sin cobertura (agua potable 79.34%, alcantarillado 70.38%).</p>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Lectura del sector</span>
+    <p>En un monopolio regulado no hay competencia por precios: el resultado depende del cumplimiento regulatorio, la eficiencia operativa y la calidad del servicio.</p>
+  </div>
+</div>
+
+<h3>2.3 Matriz EFE</h3>
+<table>
+<tr>
+  <th>Código</th>
+  <th>Factor externo</th>
+  <th>Peso</th>
+  <th>Calif.</th>
+  <th>Puntaje</th>
+</tr>
+<tr><td>O1</td><td>Acceso a financiamiento externo (PNSU S/ 49.17M y OTASS S/ 9.45M)</td><td>0.15</td><td>3</td><td>0.45</td></tr>
+<tr><td>O2</td><td>Mecanismos de Retribución por Servicios Ecosistémicos Hídricos (MRSE)</td><td>0.10</td><td>3</td><td>0.30</td></tr>
+<tr><td>O3</td><td>Integración de ámbitos y pequeños prestadores</td><td>0.08</td><td>3</td><td>0.24</td></tr>
+<tr><td>O4</td><td>Normativa VMA para usuarios no domésticos</td><td>0.07</td><td>3</td><td>0.21</td></tr>
+<tr><td>A1</td><td>Lluvias intensas y ausencia de drenaje pluvial segregado</td><td>0.15</td><td>1</td><td>0.15</td></tr>
+<tr><td>A2</td><td>Procesos sancionadores y fiscalización de SUNASS, ANA y OEFA</td><td>0.10</td><td>2</td><td>0.20</td></tr>
+<tr><td>A3</td><td>Inconsistencia demográfica del Estudio Tarifario 2025-2028</td><td>0.10</td><td>1</td><td>0.10</td></tr>
+<tr><td>A4</td><td>Agua No Facturada (51.10%), clandestinaje y baja micromedición</td><td>0.10</td><td>2</td><td>0.20</td></tr>
+<tr><td>A5</td><td>Alta conflictividad judicial laboral (1,196 expedientes)</td><td>0.08</td><td>2</td><td>0.16</td></tr>
+<tr><td>A6</td><td>Interferencia de obras viales municipales con redes de EPSEL</td><td>0.07</td><td>2</td><td>0.14</td></tr>
+<tr><td colspan="2"><b>TOTAL</b></td><td><b>1.00</b></td><td></td><td><b>2.15</b></td></tr>
+</table>
+<div class="box-result"><strong>Lectura EFE · Σ = 2.15</strong><small>Puntaje por debajo de 2.50: el entorno ofrece más amenazas que oportunidades aprovechadas; EPSEL debe responder con mayor rapidez a los factores externos.</small></div>
+
+<!-- ===================== ANÁLISIS INTERNO ===================== -->
+<h2 id="interno">ANÁLISIS INTERNO DE LA EMPRESA</h2>
+<p class="lead">Se evalúan la cadena de valor, el modelo VRIO, el FODA interno y la matriz EFI.</p>
+
+<h3>3.1 Cadena de Valor</h3>
+<h4>Actividades primarias</h4>
+<div class="grid grid-3">
+  <div class="card c-azul">
+    <span class="lbl">Logística de entrada · Captación</span>
+    <ul>
+      <li>Bocatoma <b>Raca-Rumi</b> (río Chancay, hasta 75 m³/s) → Proyecto Tinajones (canal de 16 km).</li>
+      <li>Reservorio <b>Tinajones</b>: 320 millones de m³, espejo de 20 km².</li>
+      <li>Canal Taymi (riego) y río Lambayeque (40 km) hasta <b>Lagunas Boró I y II</b> (≈2 M de m³ de pre-sedimentación).</li>
+    </ul>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Operaciones · Producción</span>
+    <ul>
+      <li>PTAP N°1 (convencional, 700 l/s): coagulación → floculación → decantación → filtración (8 filtros) → desinfección.</li>
+      <li>PTAP N°2 (patente DEGREMONT, 750 l/s): decantadores Pulsator, 6 filtros AQUAZUR V, post-cloración.</li>
+      <li>Agua tratada conforme a estándares OMS; 4 electrobombas de 200 HP y 3 de 400 kW impulsan la distribución.</li>
+    </ul>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Logística de salida · Distribución</span>
+    <ul>
+      <li>Gerencia Operacional con subgerencias Centro, Noreste y Sur.</li>
+      <li>4 zonas: Chiclayo (5 localidades), Noreste (10), Sur (9) y Ferreñafe (4) — 28 localidades atendidas.</li>
+    </ul>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Recolección y tratamiento de desagüe</span>
+    <ul>
+      <li><b>Lagunas Pampa de Perros</b> (17,000 m³/d) tratan el Emisor Norte Norte.</li>
+      <li><b>Lagunas San José</b> (76,850 m³/d) tratan los colectores Norte y Sur Norte (medidor Parshall).</li>
+      <li>El efluente tratado permite riego seguro de cultivos de tallo alto.</li>
+    </ul>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Mkt, ventas y servicio postventa</span>
+    <ul>
+      <li>Facturación, cobranza (morosidad S/ 31.27M), catastro y reclamos regulados por SUNASS.</li>
+      <li>Micromedición de solo <b>36.16%</b> y Agua No Facturada del <b>51.10%</b>.</li>
+      <li>Canales presenciales, bancarios, virtuales y app Gotitas; continuidad 12.94 h/día y presión 6.42 m.c.a.</li>
+    </ul>
+  </div>
+  <div class="card c-rosa">
+    <span class="lbl">Actividades de apoyo · Resumen</span>
+    <p>Infraestructura (Directorio, Gerencia General, OCI, transparencia), RRHH, desarrollo tecnológico (SICDESA, Gotitas), logística, asesoría legal (VMA) y gestión financiera integradas bajo la Gerencia de Administración y Finanzas.</p>
+  </div>
+</div>
+
+<h4>Actividades de apoyo</h4>
+<div class="grid grid-3">
+  <div class="card c-morado">
+    <span class="lbl">Infraestructura</span>
+    <p>Directorio y Gerencia General dirigen la gestión; OCI y Oficina de Control de Gestión e Integridad monitorean riesgos, integridad y cumplimiento bajo la Directiva de Transparencia 04-2026.</p>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">Gestión de RRHH</span>
+    <p>Selección, planillas, capacitación (Plan de Fortalecimiento), clima laboral, seguridad y salud, disciplina e integridad (declaraciones juradas a la Contraloría).</p>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">Desarrollo tecnológico</span>
+    <p>La Oficina de TIC administra bases de datos, seguridad y plataformas digitales: sistema SICDESA, app Gotitas y portal de pago virtual.</p>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">Abastecimiento · Logística</span>
+    <p>Contrataciones (Plan Anual), almacén e insumos químicos, parque automotor, servicios generales y archivo, evitando desabastecimientos críticos.</p>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">Asesoría legal</span>
+    <p>Garantiza la legalidad de las actuaciones y el cumplimiento de la normativa VMA (D.S. 021-2009, 003-2011 y 001-2015-VIVIENDA).</p>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">Gestión financiera</span>
+    <p>Contabilidad regulatoria, tesorería y caja, recaudación, conciliaciones y presupuesto articulados con el PEI, POI y el Plan Maestro Optimizado.</p>
+  </div>
+</div>
+
+<h3>3.2 Modelo VRIO</h3>
+<table>
+<tr>
+  <th>Recurso / Capacidad</th>
+  <th>Valioso</th>
+  <th>Raro</th>
+  <th>Inimitable</th>
+  <th>Organizado</th>
+  <th>Implicancia competitiva</th>
+</tr>
+<tr><td>Infraestructura de captación y tratamiento (Tinajones, PTAP 1 y 2)</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td><td><b>Ventaja sostenida</b></td></tr>
+<tr><td>Cobertura geográfica en 4 zonas</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td><td><b>Ventaja sostenida</b></td></tr>
+<tr><td>Trayectoria histórica (desde 1930)</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td><td><b>Ventaja sostenida</b></td></tr>
+<tr><td>App Gotitas y portal de pago virtual</td><td>Sí</td><td>No</td><td>No</td><td>Sí</td><td>Ventaja temporal</td></tr>
+<tr><td>Sistema SICDESA (gestión de reclamos)</td><td>Sí</td><td>No</td><td>No</td><td>Sí</td><td>Paridad competitiva</td></tr>
+<tr><td>Programa de Integridad formalizado (2026)</td><td>Sí</td><td>No</td><td>No</td><td>Sí</td><td>Paridad competitiva</td></tr>
+<tr><td>Oficina de Control de Gestión e Integridad</td><td>Sí</td><td>Sí</td><td>Medio</td><td>Sí</td><td>Ventaja temporal</td></tr>
+<tr><td>Cultura organizacional (valores)</td><td>Sí</td><td>Medio</td><td>Alto</td><td>Depende</td><td>Potencial ventaja sostenida</td></tr>
+</table>
+
+<h3>3.3 FODA Interno</h3>
+<div class="grid grid-2">
+  <div class="card c-verde">
+    <span class="lbl">Fortalezas</span>
+    <ul>
+      <li>Infraestructura de captación y tratamiento de gran escala (Tinajones, PTAP 1 y 2).</li>
+      <li>Amplia cobertura con estructura zonal descentralizada (4 zonas, 28 localidades).</li>
+      <li>Más de 90 años de trayectoria en el sector.</li>
+      <li>Diversificación de canales de pago (presencial, bancario, virtual, app Gotitas).</li>
+      <li>Procesos comerciales y de reclamos formalizados según SUNASS.</li>
+      <li>Mecanismo social de apoyo a usuarios vulnerables (rebaja de intereses).</li>
+      <li>Alianzas estratégicas (SEDAPAL, GIZ, SUNASS, INACAL, MVCS).</li>
+      <li>Programa de Integridad aprobado para 2026.</li>
+      <li>Cultura organizacional basada en valores explícitos.</li>
+    </ul>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">Debilidades</span>
+    <ul>
+      <li>Horario de atención al público muy restringido (2 días/semana en el local principal).</li>
+      <li>Reclamos que pueden durar más de 90 días hábiles.</li>
+      <li>Trámites con múltiples requisitos documentales (burocracia).</li>
+      <li>Área de integridad de reciente creación, aún no consolidada.</li>
+      <li>Baja cultura sanitaria de los usuarios (sobrecostos operativos).</li>
+      <li>Avances de fraude y suplantación en cobranza a domicilio.</li>
+      <li>Permanencia bajo el Régimen de Apoyo Transitorio (OTASS).</li>
+    </ul>
+  </div>
+</div>
+
+<h3>3.4 Matriz EFI</h3>
+<table>
+<tr>
+  <th>Factor interno</th>
+  <th>Peso</th>
+  <th>Calif. (1-4)</th>
+  <th>Puntaje</th>
+</tr>
+<tr><td colspan="4"><b>FORTALEZAS</b></td></tr>
+<tr><td>Infraestructura de captación/tratamiento de gran escala</td><td>0.15</td><td>4</td><td>0.60</td></tr>
+<tr><td>Amplia cobertura geográfica (4 zonas)</td><td>0.10</td><td>4</td><td>0.40</td></tr>
+<tr><td>Trayectoria histórica (+90 años)</td><td>0.05</td><td>3</td><td>0.15</td></tr>
+<tr><td>Diversificación de canales de pago (Gotitas, virtual, bancos)</td><td>0.08</td><td>3</td><td>0.24</td></tr>
+<tr><td>Procesos comerciales/reclamos formalizados (SUNASS)</td><td>0.08</td><td>3</td><td>0.24</td></tr>
+<tr><td>Mecanismo social (rebaja por situación económica)</td><td>0.04</td><td>3</td><td>0.12</td></tr>
+<tr><td>Alianzas institucionales estratégicas</td><td>0.05</td><td>3</td><td>0.15</td></tr>
+<tr><td>Programa de Integridad formalizado</td><td>0.05</td><td>4</td><td>0.20</td></tr>
+<tr><td>Cultura organizacional basada en valores</td><td>0.05</td><td>3</td><td>0.15</td></tr>
+<tr><td>Subtotal Fortalezas</td><td><b>0.65</b></td><td></td><td><b>2.25</b></td></tr>
+<tr><td colspan="4"><b>DEBILIDADES</b></td></tr>
+<tr><td>Horario de atención muy restringido</td><td>0.08</td><td>1</td><td>0.08</td></tr>
+<tr><td>Proceso de reclamos potencialmente largo</td><td>0.07</td><td>2</td><td>0.14</td></tr>
+<tr><td>Trámites con requisitos documentales complejos</td><td>0.05</td><td>2</td><td>0.10</td></tr>
+<tr><td>Integridad aún en proceso de consolidación</td><td>0.05</td><td>2</td><td>0.10</td></tr>
+<tr><td>Baja cultura sanitaria de los usuarios</td><td>0.05</td><td>2</td><td>0.10</td></tr>
+<tr><td>Riesgos de fraude/suplantación en cobranza</td><td>0.03</td><td>1</td><td>0.03</td></tr>
+<tr><td>Régimen OTASS (antecedente de intervención)</td><td>0.02</td><td>1</td><td>0.02</td></tr>
+<tr><td>Subtotal Debilidades</td><td><b>0.35</b></td><td></td><td><b>0.57</b></td></tr>
+<tr><td><b>TOTAL</b></td><td><b>1.00</b></td><td></td><td><b>2.82</b></td></tr>
+</table>
+<div class="box-result"><strong>Lectura EFI · Σ = 2.82</strong><small>Puntaje por encima de 2.50: la posición interna de EPSEL es sólida; las fortalezas (infraestructura, cobertura, integridad) superan a las debilidades.</small></div>
+
+<h4>Organigrama</h4>
+<p>La estructura orgánica comprende el Directorio, la Gerencia General y las gerencias de línea (Operaciones, Comercial, Administración y Finanzas) y de asesoría (Jurídica, Desarrollo y Presupuesto).</p>
+<img src="images/img_1.png" alt="Organigrama de EPSEL S.A.">
+
+<!-- ===================== DEFINICIÓN ESTRATÉGICA ===================== -->
+<h2 id="estrategica">DEFINICIÓN ESTRATÉGICA DE LA EMPRESA</h2>
+
+<div class="grid grid-2">
+  <div class="card c-azul">
+    <span class="lbl">Misión</span>
+    <p>«Somos una empresa que brinda servicios de <b>agua potable y saneamiento</b> en condiciones de eficiencia, calidad, sostenibilidad y equidad, satisfaciendo las necesidades y expectativas de nuestros usuarios.»</p>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Visión</span>
+    <p>«Ser una empresa <b>reconocida por la población</b> por su eficiente servicio de agua potable y saneamiento, con responsabilidad social y ambiental.»</p>
+  </div>
+</div>
+
+<h4>Análisis de la misión</h4>
+<div class="grid grid-3">
+  <div class="card c-verde"><span class="lbl">Clientes · ✓</span><p>Identifica a los usuarios como destinatarios del servicio.</p></div>
+  <div class="card c-verde"><span class="lbl">Productos · ✓</span><p>Señala con claridad los servicios: agua potable y saneamiento.</p></div>
+  <div class="card c-ambar"><span class="lbl">Mercados · Parcial</span><p>Habla de «nuestros usuarios», pero no precisa el ámbito geográfico.</p></div>
+  <div class="card c-rojo"><span class="lbl">Tecnología · ✗</span><p>No menciona tecnología, innovación ni herramientas digitales.</p></div>
+  <div class="card c-ambar"><span class="lbl">Crecimiento · Parcial</span><p>«Sostenibilidad» sugiere permanencia, pero omite crecimiento y rentabilidad explícitos.</p></div>
+  <div class="card c-verde"><span class="lbl">Filosofía · ✓</span><p>Eficiencia, calidad, sostenibilidad y equidad orientan la gestión.</p></div>
+  <div class="card c-ambar"><span class="lbl">Autoconcepto · Parcial</span><p>Define qué es EPSEL, pero no sus capacidades diferenciadoras.</p></div>
+  <div class="card c-ambar"><span class="lbl">Imagen pública · Parcial</span><p>Proyecta una imagen responsable, sin un compromiso social explícito.</p></div>
+  <div class="card c-rojo"><span class="lbl">Empleados · ✗</span><p>No hace referencia a los colaboradores ni a su desarrollo.</p></div>
+</div>
+
+<h4>Análisis de la visión</h4>
+<div class="grid grid-3">
+  <div class="card c-verde"><span class="lbl">Precisa · ✓</span><p>Expresa con claridad la situación futura deseada.</p></div>
+  <div class="card c-verde"><span class="lbl">Concisa · ✓</span><p>Comunica lo esencial en una sola declaración.</p></div>
+  <div class="card c-verde"><span class="lbl">Breve · ✓</span><p>Oración corta y fácil de recordar.</p></div>
+  <div class="card c-rojo"><span class="lbl">Temporal · ✗</span><p>No define un horizonte de tiempo para alcanzarla (corto o mediano plazo).</p></div>
+</div>
+
+<h4>Valores</h4>
+<p>
+  <span class="chip">Trabajo en equipo</span>
+  <span class="chip">Honestidad</span>
+  <span class="chip">Protección del medio ambiente</span>
+  <span class="chip">Servicio de calidad al cliente</span>
+  <span class="chip">Responsabilidad</span>
+  <span class="chip">Respeto por la persona y su dignidad</span>
+</p>
+
+<h3>Factores clave de éxito</h3>
+<div class="grid grid-3">
+  <div class="card c-azul"><span class="lbl">1 · Calidad del servicio</span><p>Ampliación de la cobertura con continuidad, presión adecuada y menos roturas y atoros.</p></div>
+  <div class="card c-azul"><span class="lbl">2 · Sostenibilidad financiera</span><p>Optimización de costos, aumento de ingresos y control de pérdidas (agua no facturada).</p></div>
+  <div class="card c-azul"><span class="lbl">3 · Ejecución de inversiones</span><p>Convertir los fondos (OTASS, PMO) en obras que amplían redes y corrigen deficiencias.</p></div>
+  <div class="card c-azul"><span class="lbl">4 · Gestión institucional</span><p>Buen gobierno corporativo, gobierno digital, gestión por procesos y capital humano capacitado.</p></div>
+  <div class="card c-azul"><span class="lbl">5 · Riesgo de desastres</span><p>Planes de contingencia y fondos de reserva para no interrumpir el servicio ante eventos naturales.</p></div>
+</div>
+
+<!-- ===================== OBJETIVOS ESTRATÉGICOS ===================== -->
+<h2 id="objetivos">OBJETIVOS ESTRATÉGICOS</h2>
+<p class="lead">Cuatro objetivos del PEI 2024-2028, evaluados con la metodología SMART (base 2023).</p>
+
+<div class="grid grid-2">
+  <div class="card c-azul">
+    <span class="lbl">OE1 · Acceso a saneamiento</span>
+    <p><b>Incrementar el acceso a servicios de saneamiento sostenible y de calidad</b> (agua potable y alcantarillado).</p>
+    <ul>
+      <li><b>Específico:</b> AEI.01.01 mejorar/ampliar agua potable; AEI.01.02 mejorar/ampliar alcantarillado.</li>
+      <li><b>Medible:</b> continuidad 12.94 → 14.14 h/d; presión 6.42 → 6.81 m.c.a.; cobertura agua 78.25% → 84.92%; alcantarillado 70.38% → 74.56%; cloro 100%; menos roturas y atoros.</li>
+      <li><b>Alcanzable:</b> hay acciones e indicadores, pero con déficit de oferta de agua y redes obsoletas.</li>
+      <li><b>Relevante:</b> núcleo de la misión; revierte las causas del RAT.</li>
+      <li><b>Temporal:</b> PEI 2024-2028.</li>
+    </ul>
+  </div>
+  <div class="card c-verde">
+    <span class="lbl">OE2 · Gestión financiera</span>
+    <p><b>Mantener o mejorar la gestión financiera y económica de la empresa.</b></p>
+    <ul>
+      <li><b>Específico:</b> AEI.02.01-04 mejorar ingresos, optimizar costos, reducir pérdidas y ejecutar inversiones.</li>
+      <li><b>Medible:</b> recaudación S/112.3M → S/164.8M; deuda 3m+ S/33.1M → S/8.9M; ANF 51.10% → 38.24%; micromedición 36.16% → 85.03%; ejecución de inversiones 21% → 90%.</li>
+      <li><b>Alcanzable:</b> acciones, responsables y metas anuales definidos.</li>
+      <li><b>Relevante:</b> financia la prestación y el camino de salida del RAT.</li>
+      <li><b>Temporal:</b> PEI 2024-2028.</li>
+    </ul>
+  </div>
+  <div class="card c-morado">
+    <span class="lbl">OE3 · Gestión institucional</span>
+    <p><b>Fortalecer la gestión institucional de EPSEL S.A.</b></p>
+    <ul>
+      <li><b>Específico:</b> buen gobierno corporativo, capacidades del personal, gobierno digital, imagen institucional y gestión por procesos (MAPRO).</li>
+      <li><b>Medible:</b> buen gobierno 3.50 → 90; personal capacitado 42% → 97%; legajos digitalizados 0% → 100%; reclamos 6/1,000; MAPRO 0 → 1.</li>
+      <li><b>Alcanzable:</b> cada indicador tiene una unidad responsable.</li>
+      <li><b>Relevante:</b> soporte interno para servicios eficientes y de calidad.</li>
+      <li><b>Temporal:</b> PEI 2024-2028.</li>
+    </ul>
+  </div>
+  <div class="card c-ambar">
+    <span class="lbl">OE4 · Gestión de riesgos</span>
+    <p><b>Implementar la gestión de riesgos de desastres naturales y antrópicos.</b></p>
+    <ul>
+      <li><b>Específico:</b> AEI.04.01 ejecutar el Plan de Gestión de Riesgo de Desastres.</li>
+      <li><b>Medible:</b> 1 plan GRD anual (2024-2028); Fondo de Reserva 0% → 80-85% (con inconsistencia al cierre del periodo).</li>
+      <li><b>Alcanzable:</b> definido, pero requiere apoyo técnico y personal idóneo.</li>
+      <li><b>Relevante:</b> evita la paralización del servicio ante El Niño y otras amenazas.</li>
+      <li><b>Temporal:</b> PEI 2024-2028.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== FORMULACIÓN DE ESTRATEGIAS ===================== -->
+<h2 id="estrategias">FORMULACIÓN DE ESTRATEGIAS</h2>
+
+<h3>6.1 Matriz FODA Cruzada (TOWS)</h3>
+<div class="grid grid-2">
+  <div class="card c-verde">
+    <span class="lbl">FO · Max-Max (crecer)</span>
+    <ul>
+      <li>Aprovechar infraestructura y financiamiento público para ampliar y modernizar.</li>
+      <li>Potenciar los canales digitales (app Gotitas) para la atención remota.</li>
+      <li>Fortalecer la articulación con OTASS/SUNASS/GORE para acelerar proyectos.</li>
+      <li>Incorporar telemetría y macromedición para controlar producción y distribución.</li>
+      <li>Evaluar expansión ordenada hacia nuevas localidades.</li>
+      <li>Integrar el control con mecanismos de protección hídrica (MRSE).</li>
+    </ul>
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">FA · Max-Min (defender)</span>
+    <ul>
+      <li>Usar la capacidad de captación y tratamiento para asegurar la continuidad ante lluvias y El Niño.</li>
+      <li>Fortalecer procesos comerciales frente a las exigencias de SUNASS/ANA.</li>
+      <li>Integrar canales digitales y medición para reducir la Agua No Facturada.</li>
+      <li>Reforzar la cultura organizacional frente a la conflictividad laboral.</li>
+      <li>Coordinar con anticipación el efecto de las obras viales municipales.</li>
+    </ul>
+  </div>
+  <div class="card c-ambar">
+    <span class="lbl">DO · Min-Max (superar)</span>
+    <ul>
+      <li>Digitalizar y simplificar trámites para reducir la dependencia presencial.</li>
+      <li>Aprovechar la asistencia de OTASS/SUNASS para agilizar reclamos.</li>
+      <li>Consolidar la Oficina de Control de Gestión con asistencia técnica e indicadores.</li>
+      <li>Usar políticas y financiamiento para superar las condiciones del RAT.</li>
+      <li>Reforzar la comunicación digital para prevenir fraudes en cobranzas.</li>
+      <li>Desarrollar educación sanitaria digital para el uso correcto del agua.</li>
+    </ul>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">DA · Min-Min (contingencia)</span>
+    <ul>
+      <li>Educación sanitaria en zonas vulnerables para prevenir colapsos en lluvias.</li>
+      <li>Simplificar y digitalizar reclamos para evitar incumplimientos regulatorios.</li>
+      <li>Reforzar la seguridad y trazabilidad de cobranzas contra fraudes.</li>
+      <li>Acelerar metas (eficiencia, micromedición) para reducir la vulnerabilidad regulatoria.</li>
+      <li>Consolidar integridad y control interno para disminuir sanciones.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>6.2 Matriz PEYEA</h3>
+<div class="grid grid-2">
+  <div class="card c-verde">
+    <span class="lbl">FF · Fortaleza financiera · +2.33</span>
+    <ul>
+      <li>Margen operacional 35.5% (+4) y ejecución de inversiones 80.74% (+3).</li>
+      <li>Margen neto bajo (5.11%) y recaudación estancada (+2).</li>
+      <li>Morosidad de S/31.27M (+2); RDR para inversión apenas S/2.41M (+1).</li>
+    </ul>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">VC · Ventaja competitiva · -3.67</span>
+    <ul>
+      <li>Monopolio legal (-1) y cloro residual al 100% (-1).</li>
+      <li>Presión 6.44 m.c.a. (-4); micromedición 36.16% (-5).</li>
+      <li>Continuidad 12.97 h/d (-5) y ANF 51.10% (-6).</li>
+    </ul>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">EE · Estabilidad del entorno · -4.33</span>
+    <ul>
+      <li>Vulnerabilidad climática y El Niño (-6); litigiosidad laboral (-5).</li>
+      <li>Rigidez regulatoria SUNASS y presión sancionadora (-4 c/u).</li>
+      <li>Riesgo ético comercial tercerizado (-4) e interferencia de obras municipales (-3).</li>
+    </ul>
+  </div>
+  <div class="card c-verde">
+    <span class="lbl">FI · Fortaleza de la industria · +4.83</span>
+    <ul>
+      <li>Fondeo público OTASS/PNSU (+5) y barreras de entrada (+6).</li>
+      <li>Demanda insatisfecha: agua 78.25% y alcantarillado 70.38% de cobertura (+5).</li>
+      <li>MRSE (+4), control VMA (+4) y demanda inelástica (+5).</li>
+    </ul>
+  </div>
+</div>
+<div class="box-result"><strong>Coordenada: X = FI + VC = +1.16 · Y = FF + EE = -2.00</strong><small>Posición competitiva débil en una industria atractiva. Se recomiendan estrategias intensivas: captar más usuarios y mejorar cobertura, micromedición y reducción del ANF.</small></div>
+<img src="images/img_3.png" alt="Gráfico de la matriz PEYEA">
+
+<h3>6.3 Matriz BCG (Boston Consulting Group)</h3>
+<div class="grid grid-3">
+  <div class="card c-ambar">
+    <span class="lbl">Interrogante · ¿?</span>
+    <p><b>¿Cómo garantizar el acceso permanente de la población a servicios de agua potable y alcantarillado adecuados, sostenibles y de calidad?</b></p>
+    <p>Evolución histórica: 1930 gestión municipal → 1960 gobierno central → 1981 SENAPA (D.L. 150) → 1984 SEDALAMBAYEQUE → 1990 descentralización → 1994-96 nace EPSEL S.A.</p>
+  </div>
+  <div class="card c-verde">
+    <span class="lbl">Estrella · Crecimiento</span>
+    <p>Tras su constitución en 1996, EPSEL se consolida como prestador: las conexiones pasan de <b>156,170 (2016) a 168,521 (2019)</b>, con una base creciente de usuarios e infraestructura.</p>
+  </div>
+  <div class="card c-rojo">
+    <span class="lbl">Vaca · Reflotamiento</span>
+    <p>Colapso operativo, comercial y financiero previo al RAT: alto endeudamiento, insolvencia y problemas de gobernanza. En <b>2017 el MVCS oficializó el ingreso de EPSEL al Régimen de Apoyo Transitorio (R.M. 262-2017-VIVIENDA)</b>, bajo la dirección de OTASS, para reestructurar la gestión y reflotar financieramente el servicio.</p>
+  </div>
+</div>
+
+<!-- ===================== REFERENCIAS ===================== -->
+<h2 id="referencias">REFERENCIAS</h2>
+<ul class="cites">
+<li>[1] EPSEL S.A., «Reseña Histórica y Aspectos Generales», Chiclayo, 2024.</li>
+<li>[2] MVCS, «Evolución institucional y marco normativo del sector saneamiento en el Perú», Lima, 2020.</li>
+<li>[3] Poder Ejecutivo, Decreto Legislativo N° 150 (creación de SENAPA), Diario Oficial El Peruano, 12 jun. 1981.</li>
+<li>[4] EPSEL S.A., Memoria 2019, Gerencia Comercial, 2019.</li>
+<li>[5] MVCS, Resolución Ministerial N° 262-2017-VIVIENDA (ingreso de EPSEL al RAT), 14 jul. 2017.</li>
+<li>[6] MVCS, «Sedaloreto y Epsel ingresan a Régimen de Apoyo Transitorio para ser fortalecidas», 11 jul. 2017.</li>
+<li>[7] SUNASS, «Régimen de Apoyo Transitorio (RAT)», Plataforma Digital Única del Estado Peruano, 2026.</li>
+</ul>
+<img src="images/img_2.png" alt="Imagen de referencia del informe">
+
+<!-- ===================== CONCLUSIONES Y RECOMENDACIONES ===================== -->
+<h2 id="conclusiones">CONCLUSIONES Y RECOMENDACIONES</h2>
+
+<h3>7.1 Conclusiones</h3>
+<div class="grid grid-2">
+  <div class="card c-azul"><span class="lbl">1 · Dependencia externa</span><p>EPSEL depende presupuestal y sectorialmente del Gobierno Nacional (RAT/OTASS). Tarifas reguladas por SUNASS frente a un plan de S/112.7M y costos crecientes en energía, químicos y mantenimiento.</p></div>
+  <div class="card c-azul"><span class="lbl">2 · Presión social y ambiental</span><p>La expansión urbana desborda las redes (reparto en cisternas y quejas). Infraestructura vulnerable a lluvias y El Niño; nuevas exigencias de certificación (Ley 32041) y una oportunidad latente en telemetría y digitalización.</p></div>
+  <div class="card c-azul"><span class="lbl">3 · Desbalance interno</span><p>Captación y potabilización robustas (Tinajones, PTAP 1 y 2), pero distribución y gestión comercial débiles: <b>ANF 51.10%</b> y micromedición de <b>36.16%</b> restringen la recaudación y agravan la morosidad.</p></div>
+  <div class="card c-azul"><span class="lbl">4 · Postventa y ventajas</span><p>Continuidad de 12.94 h/día, baja presión y reclamos de hasta 90 días hábiles. VRIO y EFI (2.82): las ventajas sostenidas son solo los activos físicos y la cobertura exclusiva; soporte y TI están en paridad o ventaja temporal.</p></div>
+  <div class="card c-azul"><span class="lbl">5 · Estrategia</span><p>La misión comunica la razón de ser pero omite tecnología y trabajadores; la visión carece de horizonte temporal. Los factores clave de éxito están bien focalizados en financiamiento, inversión y gestión de riesgos.</p></div>
+  <div class="card c-azul"><span class="lbl">6 · Objetivos SMART</span><p>Indicadores claros al 2028, pero con riesgos de alcanzabilidad: déficit físico de oferta y redes obsoletas; la gestión de riesgos muestra inconsistencias presupuestales y falta de personal técnico.</p></div>
+</div>
+
+<h3>7.2 Recomendaciones</h3>
+<div class="grid grid-2">
+  <div class="card c-verde"><span class="lbl">1 · TI estratégica</span><p>Transformar TI en un rol de gobierno corporativo para reducir el ANF del 51.10%: macromedidores, IoT, telemetría y SCADA en tiempo real, con la meta de micromedición del 85.03%.</p></div>
+  <div class="card c-verde"><span class="lbl">2 · Omnicanalidad</span><p>Superar el horario presencial de 2 días/semana integrando la app Gotitas con SICDESA: reclamos en línea, georreferenciados y más rápidos, reduciendo el plazo de hasta 90 días hábiles.</p></div>
+  <div class="card c-verde"><span class="lbl">3 · GIS corporativo</span><p>Cartografiar y priorizar las redes vulnerables a inundaciones, facilitar fichas técnicas de emergencia y ejecutar oportunamente los fondos de reserva ante El Niño.</p></div>
+  <div class="card c-verde"><span class="lbl">4 · Financiera y operativa</span><p>Concentrar el Plan de Inversiones y transferencias OTASS en sectores con morosidad y fugas; optimizar costos de energía e insumos y estandarizar procesos (ISO 9001 / Ley 32041) para salir del RAT.</p></div>
+  <div class="card c-verde"><span class="lbl">5 · Direccionamiento estratégico</span><p>Actualizar misión y visión incluyendo transformación digital, capital humano y una meta temporal definida (2030), con cultura de rendición de cuentas e integridad.</p></div>
+</div>
+
+<!-- ===================== BIBLIOGRAFÍA ===================== -->
+<h2 id="bibliografia">BIBLIOGRAFÍA</h2>
+<ul class="cites">
+<li>[1] EPSEL S.A., Plan Estratégico Institucional 2024-2028, Gerencia de Desarrollo y Presupuesto, Chiclayo, 2024.</li>
+<li>[2] EPSEL S.A., Informe Anual de Gobierno Corporativo – Ejercicio 2024, Chiclayo, 2025.</li>
+<li>[3] EPSEL S.A., Plan de Acción Anual – Sección Medidas de Control 2026, Chiclayo, 2026.</li>
+<li>[4] EPSEL S.A., Reglamento de Organización y Funciones (ROF) 2025, Chiclayo, 2025.</li>
+<li>[5] EPSEL S.A., Ciclo Operacional: Normatividad VMA, Integridad y Gestión Operativa, Portal SUE, 2025.</li>
+<li>[6] OTASS y SUNASS, Marco Legal de Intervención y Hito Histórico del RAT en EPSEL S.A., R.M. 262-2017-VIVIENDA / Inf. 0017-2021-SUNASS-DF, 2021.</li>
+</ul>
+<p class="lead">Las referencias históricas e institucionales complementarias se listan en la sección REFERENCIAS.</p>
+
+<!-- ===================== ANEXO ===================== -->
+<h2 id="anexo">ANEXO</h2>
+<div class="grid grid-2">
+  <div class="card c-azul">
+    <span class="lbl">Anexo 1 · Carta de solicitud</span>
+    <p>Carta de solicitud para acceder a la información pública utilizada en el informe.</p>
+    <img src="images/img_6.png" alt="Carta de solicitud de acceso a la información">
+  </div>
+  <div class="card c-azul">
+    <span class="lbl">Anexo 2 · Trámite documentario</span>
+    <p>Trámite documental del pedido de información oficial.</p>
+    <img src="images/img_4.png" alt="Trámite documentario">
+  </div>
+</div>
+
+</div>
+</main>
+<footer class="site-footer">
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+      <path d="M0 30 C 200 70 420 0 720 28 S 1240 70 1440 26 L 1440 70 L 0 70 Z" fill="var(--oscuro)"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="logo" src="img/Epsel_350_240%20.png" alt="EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque">
+        <h4>Empresa Prestadora de Servicios de Saneamiento de Lambayeque S.A.</h4>
+        <p class="sl">“Agua que nos une para un mejor desarrollo.”</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Enlaces</h5>
+        <ul class="footer-menu">
+          <li><a href="#intro">Introducción</a></li>
+          <li><a href="#externo">Análisis externo</a></li>
+          <li><a href="#interno">Análisis interno</a></li>
+          <li><a href="#estrategias">Estrategias</a></li>
+          <li><a href="#conclusiones">Conclusiones</a></li>
+          <li><a href="#anexo">Anexo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Nuestra esencia</h5>
+        <p class="footer-sdv">Servicio <b>·</b> Vida <b>·</b> Desarrollo</p>
+        <ul class="footer-contact">
+          <li><svg class="ic"><use href="#i-pin"/></svg> Chiclayo, Lambayeque, Perú</li>
+          <li><svg class="ic"><use href="#i-drop"/></svg> Agua potable y alcantarillado para la región</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul class="footer-contact">
+          <li><svg class="ic"><use href="#i-phone"/></svg> (074) 606262</li>
+          <li><svg class="ic"><use href="#i-mail"/></svg> informes@epsel.com.pe</li>
+          <li><svg class="ic"><use href="#i-clock"/></svg> Lun – Vie · 8:00 a.m. – 5:00 p.m.</li>
+        </ul>
+        <div class="social-row" style="margin-top:18px">
+          <a href="#" aria-label="Facebook"><svg class="ic ic--fill"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="ic ic--fill"><use href="#i-youtube"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="ic ic--fill"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="footer-copy">© 2026 EPSEL S.A. Todos los derechos reservados.</p>
+      <p class="footer-hand">Hecho por los truki18 👑</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

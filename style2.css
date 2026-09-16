@@ -542,7 +542,7 @@ blockquote{
 .site-footer{
     position:relative;
     background:#021B3A;
-    color:#B9CFE4;
+    color:#fff;
 }
 
 .site-footer::before{
@@ -573,8 +573,8 @@ blockquote{
     grid-template-columns:1.6fr 1fr 1fr 1fr;
     align-items:start;
     gap:50px;
-    padding:70px 6% 35px;
-    max-width:1400px;
+    padding:70px clamp(28px,6vw,120px) 35px;
+    max-width:1920px;
     margin:0 auto;
     position:relative;
     z-index:2;
@@ -611,7 +611,7 @@ blockquote{
 .footer-brand .sl{
     font-family:var(--manus);
     font-size:1.35rem;
-    color:var(--azul-400);
+    color:#fff;
 }
 
 .footer-col h5{
@@ -707,14 +707,14 @@ blockquote{
 }
 
 .footer-sdv b{
-    color:var(--amarillo);
+    color:#fff;
 }
 
 .footer-bottom{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:22px 6%;
+    padding:22px clamp(28px,6vw,120px);
     border-top:1px solid rgba(255,255,255,.12);
     position:relative;
     z-index:2;
@@ -722,7 +722,7 @@ blockquote{
 
 .footer-copy{
     font-size:.82rem;
-    color:#8FA9C2;
+    color:#fff;
 }
 
 .footer-hand{
@@ -1332,7 +1332,7 @@ img{
 }
 
 .footer-sdv b{
-    color:var(--amarillo);
+    color:#fff;
 }
 
 .footer-menu a{
@@ -1384,7 +1384,7 @@ img{
 
 .footer-copy{
     font-size:.82rem;
-    color:#8FA9C2;
+    color:#fff;
     text-align:left;
 }
 
@@ -1763,6 +1763,10 @@ ul{
 
 .footer-bottom{
     justify-content:center;
+    text-align:center;
+}
+
+.footer-copy{
     text-align:center;
 }
 

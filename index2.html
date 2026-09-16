@@ -688,12 +688,17 @@
 <footer class="site-footer">
   <div class="footer-wave" aria-hidden="true">
     <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
-      <path d="M0 30 C 200 70 420 0 720 28 S 1240 70 1440 26 L 1440 70 L 0 70 Z" fill="var(--oscuro)"/>
+      <defs>
+        <linearGradient id="gFooterWave" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0078D4"/>
+          <stop offset="1" stop-color="#1FA2FF"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 30 C 200 70 420 0 720 28 S 1240 70 1440 26 L 1440 70 L 0 70 Z" fill="url(#gFooterWave)"/>
     </svg>
   </div>
 
-  <div class="container">
-    <div class="footer-grid">
+  <div class="footer-content">
       <div class="footer-brand">
         <img class="logo" src="img/Epsel_350_240%20.png" alt="EPSEL S.A. — Empresa Prestadora de Servicios de Saneamiento de Lambayeque">
         <h4>Empresa Prestadora de Servicios de Saneamiento de Lambayeque S.A.</h4>
@@ -735,13 +740,10 @@
         </div>
       </div>
     </div>
-  </div>
 
   <div class="footer-bottom">
-    <div class="container">
       <p class="footer-copy">© 2026 EPSEL S.A. Todos los derechos reservados.</p>
       <p class="footer-hand">Hecho por los truki18 👑</p>
-    </div>
   </div>
 </footer>
 

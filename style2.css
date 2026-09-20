@@ -1967,6 +1967,9 @@ ul{
 
 .pestel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .pestel-grid div{padding:18px 18px 20px;border-top:4px solid var(--azul-600);background:var(--azul-100)}
+.pestel-grid ul{list-style:none;margin:12px 0 12px;padding:0;display:grid;gap:7px}
+.pestel-grid ul li{position:relative;padding-left:15px;font-size:.76rem;line-height:1.42;color:#3d5a75;text-align:left}
+.pestel-grid ul li::before{content:"";position:absolute;left:0;top:.38em;width:7px;height:7px;border-radius:50%;background:var(--azul-600);box-shadow:0 0 0 3px rgba(0,120,212,.15)}
 .pestel-grid b{display:block;color:var(--azul-900);font-size:1rem;margin-bottom:7px}
 .pestel-grid span{display:block;color:#38536C;font-size:.82rem;line-height:1.45}
 

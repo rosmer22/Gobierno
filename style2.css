@@ -2058,10 +2058,10 @@ ul{
 .slide-brand img{width:78px;height:54px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.25))}
 .slide-cover-content{max-width:900px;position:relative;z-index:2}
 .slide-cover-content h3{color:var(--azul-800);font-size:clamp(2.6rem,5vw,5.2rem);max-width:850px;margin:10px 0 18px;text-shadow:0 0 1px #fff,0 0 7px #fff,0 0 16px rgba(255,255,255,.7)}
-.slide-cover-content>p:not(.slide-course){color:#D7EDFF;font-size:clamp(1rem,1.8vw,1.35rem);font-weight:500}
+.slide-cover-content>p:not(.slide-course){color:#000000;font-size:clamp(1rem,1.8vw,1.35rem);font-weight:500}
 .slide-course{color:#8FD1FF;font-size:.78rem!important;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
 .slide-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-.slide-meta span{padding:8px 12px;border:1px solid rgba(255,255,255,.24);border-radius:10px;font-size:.74rem;font-weight:600;color:#fff}
+.slide-meta span{padding:8px 12px;border:1px solid rgba(0,0,0,.35);border-radius:10px;font-size:.74rem;font-weight:600;color:#000000}
 
 .deck-controls{display:grid;grid-template-columns:auto minmax(190px,auto) 1fr auto;align-items:center;gap:18px;position:relative;z-index:2;padding:20px 6px 0;color:#fff}
 .deck-arrow{width:48px;height:48px;border:1px solid rgba(255,255,255,.22);border-radius:14px;background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.25s}

@@ -2057,7 +2057,7 @@ ul{
 .slide-brand{position:absolute;top:clamp(28px,4vw,48px);left:clamp(32px,5vw,72px);display:flex;align-items:center;gap:14px;font-size:.78rem;font-weight:600;color:#D8EBFA}
 .slide-brand img{width:78px;height:54px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.25))}
 .slide-cover-content{max-width:900px;position:relative;z-index:2}
-.slide-cover-content h3{color:#fff;font-size:clamp(2.6rem,5vw,5.2rem);max-width:850px;margin:10px 0 18px}
+.slide-cover-content h3{color:var(--azul-800);font-size:clamp(2.6rem,5vw,5.2rem);max-width:850px;margin:10px 0 18px;text-shadow:0 0 1px #fff,0 0 7px #fff,0 0 16px rgba(255,255,255,.7)}
 .slide-cover-content>p:not(.slide-course){color:#D7EDFF;font-size:clamp(1rem,1.8vw,1.35rem);font-weight:500}
 .slide-course{color:#8FD1FF;font-size:.78rem!important;font-weight:800;text-transform:uppercase;letter-spacing:.12em}
 .slide-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
@@ -2974,7 +2974,7 @@ body.deck-focus .site-header{
     box-shadow:none;
 }
 
-.deck-cover .slide-cover-content h3{color:#fff}
+.deck-cover .slide-cover-content h3{color:var(--azul-800);text-shadow:0 0 1px #fff,0 0 7px #fff,0 0 16px rgba(255,255,255,.7)}
 
 .deck-controls{
     display:grid;

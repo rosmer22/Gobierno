@@ -521,15 +521,7 @@
         cutout: '68%',
         animation: { duration: 800, easing: 'easeOutQuart' },
         plugins: {
-          legend: {
-            position: 'right',
-            labels: {
-              font: getFont(10, 600),
-              color: THEME.navy,
-              boxWidth: 12,
-              padding: 10
-            }
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: THEME.navy,
             padding: 10,

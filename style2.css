@@ -1847,3 +1847,96 @@ html,body{background:#e8f2f8}
   #slide-15 .bcg-message{min-height:390px}
 }
 
+/* Cadena de valor: la pérdida aparece donde sucede, no en cinco hitos idénticos. */
+#slide-6 .value-chain{flex-basis:222px;gap:5px}
+#slide-6 .value-chain li{grid-template-rows:66px 14px 22px auto;row-gap:4px;align-content:start;padding:0 8px 8px}
+#slide-6 .value-chain li.chain-key{background:#fff6de}
+#slide-6 .value-chain li.chain-friction{background:#f0f7fc}
+#slide-6 .value-chain li>small{align-self:end;color:var(--blue);font-size:.54rem;font-weight:800;letter-spacing:.035em;text-transform:uppercase}
+#slide-6 .value-chain li.chain-key>small{color:#a46b00}
+#slide-6 .value-chain li.chain-friction>span{border-color:#f4b000;color:#a46b00}
+#slide-6 .value-chain b{font-size:.88rem}
+#slide-6 .value-chain p{font-size:.69rem;line-height:1.27}
+#slide-6 .value-chain p strong{color:var(--navy);font-weight:800}
+
+/* VRIO: estados escritos y bandas de lectura de la matriz. */
+#slide-7 .vrio-row{grid-template-columns:minmax(0,3.1fr) repeat(4,minmax(62px,.48fr)) minmax(0,1.55fr)}
+#slide-7 .vrio-row:nth-child(2),#slide-7 .vrio-row:nth-child(3),#slide-7 .vrio-row:nth-child(4){background:#edf8ff}
+#slide-7 .vrio-row:has(.best){background:#edf8ff}
+#slide-7 .vrio-row>*{padding:6px 9px}
+#slide-7 .vrio-row b{font-size:.72rem;line-height:1.22}
+#slide-7 .vrio-row i{font-size:.65rem;font-weight:700;color:#627f90}
+#slide-7 .vrio-row i.yes{color:var(--blue);font-weight:800}
+#slide-7 .vrio-row i.partial{color:#9a6500}
+#slide-7 .vrio-row i.pending{color:#667c8b;font-size:.58rem}
+#slide-7 .vrio-row strong{font-size:.67rem;line-height:1.2}
+#slide-7 .vrio-row strong.best{color:var(--blue)}
+
+/* Balance: actual y meta junto al dato, lectura explícita junto al gráfico. */
+#slide-10 .synthesis-grid>section{justify-content:flex-start;gap:8px;padding-top:20px}
+#slide-10 .anf-canvas-wrap{height:150px;flex:0 0 150px;margin:0}
+#slide-10 .balance-canvas-wrap{height:205px;flex:0 0 205px;margin:0}
+#slide-10 .anf-meta{margin-top:2px}
+#slide-10 .anf-trajectory{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid #c9dfeb;border-bottom:1px solid #c9dfeb}
+#slide-10 .anf-trajectory>div{display:grid;gap:2px;padding:8px 6px 8px 0}
+#slide-10 .anf-trajectory>div+div{padding-left:13px;border-left:1px solid #c9dfeb}
+#slide-10 .anf-trajectory small{color:#577286;font-size:.62rem;font-weight:700;text-transform:uppercase}
+#slide-10 .anf-trajectory strong{color:var(--navy);font-size:1.58rem;line-height:1}
+#slide-10 .anf-trajectory>div+div strong{color:var(--blue)}
+#slide-10 .anf-meta p{margin-top:10px;font-size:.79rem}
+#slide-10 .anf-meta>small{font-size:.7rem;line-height:1.3}
+#slide-10 .anf-meta>small b{font-size:.8rem}
+#slide-10 .strategic-balance>p{margin:2px 0;font-size:.82rem;line-height:1.3}
+#slide-10 .balance-reading{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:auto;background:#c9dfeb;border-top:1px solid #c9dfeb}
+#slide-10 .balance-reading>div{display:grid;gap:3px;padding:8px 9px;background:#fff}
+#slide-10 .balance-reading b{color:var(--blue);font-size:.75rem}
+#slide-10 .balance-reading span{color:#496779;font-size:.67rem;line-height:1.2}
+#slide-10 .network-diagram{height:176px;flex:0 0 176px;margin:0}
+#slide-10 .smart-network>strong{font-size:.92rem}
+#slide-10 .smart-network p{font-size:.8rem;line-height:1.32}
+#slide-10 .network-detail{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:auto;border-top:1px solid #c9dfeb}
+#slide-10 .network-detail span{padding:9px 5px;color:var(--blue);font-size:.62rem;font-weight:800;line-height:1.2;text-align:center}
+#slide-10 .network-detail span+span{border-left:1px solid #c9dfeb}
+#slide-10 .anf{justify-content:center}
+#slide-10 .network-detail{grid-template-columns:1fr;margin-top:8px}
+#slide-10 .network-detail>div{display:grid;grid-template-columns:92px 1fr;gap:8px;align-items:baseline;padding:6px 0;border-bottom:1px solid #c9dfeb}
+#slide-10 .network-detail b{color:var(--blue);font-size:.63rem;line-height:1.2}
+#slide-10 .network-detail span{padding:0;color:#496779;font-size:.64rem;font-weight:500;line-height:1.25;text-align:left}
+#slide-10 .network-detail span+span{border:0}
+
+/* Objetivos: una métrica principal por eje y tres indicadores de soporte. */
+#slide-12 .obj-metrics{height:165px;grid-template-columns:1.1fr 1fr;grid-template-rows:auto repeat(3,minmax(0,1fr));align-self:center;border-top:0}
+#slide-12 .obj-metrics::before{grid-column:1/-1;padding:0 0 6px;border-bottom:1px solid #c7deea}
+#slide-12 .obj-metrics div:first-of-type{grid-column:1;grid-row:2/5;justify-content:center;padding:10px 13px 10px 0;border:0;border-right:1px solid #c7deea;background:#f0f8fd}
+#slide-12 .obj-metrics div:first-of-type dt{font-size:.65rem}
+#slide-12 .obj-metrics div:first-of-type dd{margin-top:6px;font-size:1.05rem;line-height:1.12}
+#slide-12 .obj-metrics div:nth-of-type(n+2){grid-column:2;min-width:0;padding:5px 0 4px 12px;border-left:0}
+#slide-12 .obj-metrics div:nth-of-type(n+3){border-top:1px solid #d2e5ed}
+#slide-12 .obj-metrics div:nth-of-type(n+2) dt{font-size:.56rem}
+#slide-12 .obj-metrics div:nth-of-type(n+2) dd{font-size:.72rem}
+
+@media(max-width:820px){
+  #slide-6 .value-chain{display:grid;grid-template-columns:1fr;gap:10px}
+  #slide-6 .value-chain::before{display:none}
+  #slide-6 .value-chain li{min-height:115px;grid-template-columns:56px 1fr;grid-template-rows:16px 24px auto;justify-items:start;text-align:left;padding:10px;border-bottom:1px solid #c9dfeb}
+  #slide-6 .value-chain li>span{grid-column:1;grid-row:1/4;width:46px;height:46px}
+  #slide-6 .value-chain li>small,#slide-6 .value-chain li>b,#slide-6 .value-chain li>p{grid-column:2}
+  #slide-7 .vrio-row{grid-template-columns:minmax(220px,3fr) repeat(4,62px) minmax(150px,1.5fr)}
+  #slide-10 .synthesis-grid>section{min-height:420px}
+  #slide-12 .obj-metrics{height:165px}
+}
+@media(min-width:821px) and (max-height:800px){
+  #slide-10 .network-diagram{height:154px;flex-basis:154px}
+  #slide-10 .network-detail>div{padding:4px 0}
+  #slide-10 .network-detail span{font-size:.6rem}
+  #slide-12 .objective-card{padding:12px 16px}
+  #slide-12 .obj-metrics{height:117px}
+  #slide-12 .obj-metrics div:first-of-type dd{font-size:.9rem}
+  #slide-12 .obj-metrics div:nth-of-type(n+2){padding-top:3px;padding-bottom:2px}
+  #slide-12 .obj-metrics div:nth-of-type(n+2) dt{font-size:.51rem}
+  #slide-12 .obj-metrics div:nth-of-type(n+2) dd{font-size:.66rem}
+}
+@media(min-width:821px) and (min-height:801px){
+  #slide-10 .balance-canvas-wrap{height:228px;flex-basis:228px}
+}
+

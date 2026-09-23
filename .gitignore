@@ -11,3 +11,9 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Artefactos locales de revisión visual
+.playwright-cli/
+output/
+scratch/
+docs/*.md

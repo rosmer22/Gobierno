@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+<!--
+THESIS: Una sala de situación hidráulica convierte cada diapositiva en una decisión legible y rechaza la cuadrícula corporativa de tarjetas simultáneas.
+OWN-WORLD: Azul abisal, blanco mineral, cian de telemetría y amarillo de señal; reglas técnicas, superficies planas y diagramas de infraestructura.
+STORY: La audiencia reconoce primero la conclusión, luego la relación entre datos y abre la evidencia solo cuando la exposición la necesita.
+FIRST VIEWPORT: Navegación oscura y compacta; escenario claro de gran escala; portada asimétrica con título dominante y señal hidráulica viva.
+FORM: Sala de situación de infraestructura, dirección seis; seed 5034571d.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
 <svg class="svg-sprite" aria-hidden="true">
   <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
   <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2S5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z"/></symbol>
@@ -55,20 +63,80 @@
           <div class="cover-meta"><span>Actividad 1</span><span>Grupo B · SIS</span><span>2026-II</span></div>
         </div>
         <div class="cover-visual" aria-hidden="true">
-          <div class="water-system"><span class="tank"></span><span class="tower"></span><span class="pipe pipe-a"></span><span class="pipe pipe-b"></span><span class="node node-a"></span><span class="node node-b"></span><span class="signal signal-a"></span><span class="signal signal-b"></span></div>
-          <p>Agua, datos y decisiones<br>para un mejor mañana.</p>
+          <div class="atlas-map-visual">
+            <div class="atlas-map-caption"><span>Territorio atendido</span><strong>Lambayeque</strong></div>
+            <svg viewBox="0 0 360 280" class="atlas-map-svg">
+              <defs>
+                <linearGradient id="atlasFlow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1fa2ff"/><stop offset="1" stop-color="#0057b8"/>
+                </linearGradient>
+              </defs>
+              <g class="atlas-contours">
+                <path d="M24 174C50 107 109 47 184 33c70-13 129 22 154 73 25 52 3 114-45 146-50 34-126 36-184 8-57-27-108-22-85-86Z"/>
+                <path d="M48 176C70 118 119 69 182 57c57-10 106 17 128 59 22 44 3 95-39 123-42 29-104 30-153 8-47-23-89-18-70-71Z"/>
+                <path d="M78 176c18-45 57-84 105-93 43-8 82 12 99 45 17 35 2 75-30 97-33 22-80 23-118 6-36-18-71-14-56-55Z"/>
+              </g>
+              <path class="atlas-territory" d="M94 218 75 183l18-35 2-39 37-14 30-31 48 9 33-17 36 29 6 42 33 27-15 43-43 12-28 37-47-10-43 18Z"/>
+              <path class="atlas-route atlas-route-main" d="M108 190C148 170 165 143 195 129c34-16 55-1 88-28"/>
+              <path class="atlas-route atlas-route-branch" d="M195 129c-9-27-4-47 17-66M195 129c27 20 35 43 34 77"/>
+              <g class="atlas-nodes"><circle cx="108" cy="190" r="6"/><circle cx="195" cy="129" r="8"/><circle cx="283" cy="101" r="6"/><circle cx="212" cy="63" r="5"/><circle cx="229" cy="206" r="5"/></g>
+              <g class="atlas-core"><circle cx="195" cy="129" r="27"/><path d="M195 108c-8 12-15 22-15 30a15 15 0 0 0 30 0c0-8-7-18-15-30Z"/></g>
+            </svg>
+            <div class="atlas-map-legend"><span><i></i>Red operativa</span><span><i></i>Nodos estratégicos</span></div>
+            <div class="emblem-stats atlas-stats">
+              <div><b>26</b><span>Localidades</span></div>
+              <div><b>203k</b><span>Conexiones</span></div>
+              <div><b>SCADA</b><span>Telemetría</span></div>
+            </div>
+          </div>
+          <div class="cover-tagline">
+            <strong>Agua, datos y decisiones</strong>
+            <span>para un mejor mañana · Formulación Estratégica 2026–2028</span>
+          </div>
         </div>
         <ol class="agenda"><li><b>01</b> Entorno</li><li><b>02</b> Capacidades</li><li><b>03</b> Dirección</li><li><b>04</b> Estrategia</li></ol>
       </article>
 
       <article class="slide" data-title="Contexto de la empresa" id="slide-2">
-        <header class="slide-head"><h2>Contexto institucional de EPSEL</h2><p>La empresa presta servicios esenciales en Lambayeque y gestiona su operación bajo regulación, planificación pública y apoyo transitorio.</p></header>
-        <div class="context-layout">
-          <div class="territory-map" aria-label="Ámbito de operación">
-            <svg viewBox="0 0 520 330" role="img" aria-label="Diagrama territorial de Lambayeque"><path class="map-shape" d="M83 71 168 34l92 31 79-20 95 62-20 83 43 66-101 43-89-24-76 31-93-58 20-71-52-46z"/><path class="map-route" d="M119 202c71-88 172 28 295-53"/><circle cx="193" cy="153" r="12"/><circle cx="302" cy="202" r="10"/><circle cx="373" cy="134" r="9"/></svg>
-            <div><strong>28 localidades</strong><span>Chiclayo, Lambayeque y Ferreñafe</span></div>
-          </div>
-          <dl class="context-facts"><div><dt>Regulador</dt><dd>SUNASS</dd><small>Tarifas, calidad y metas de gestión</small></div><div><dt>Marco</dt><dd>PEI 2024–2028</dd><small>Objetivos con seguimiento anual</small></div><div><dt>Situación</dt><dd>RAT</dd><small>Apoyo transitorio bajo conducción de OTASS</small></div><div><dt>Servicio</dt><dd>Esencial</dd><small>Agua potable, alcantarillado y potabilización</small></div><div><dt>Gestión</dt><dd>Institucional</dd><small>Planeamiento, transparencia e integridad</small></div><div><dt>Resultado esperado</dt><dd>Continuidad</dd><small>Con calidad, sostenibilidad y confianza</small></div></dl>
+        <header class="slide-head context-head">
+          <span class="context-kicker">02 · Territorio, escala y gobernanza</span>
+          <h2>EPSEL en Lambayeque: una red regional bajo presión</h2>
+          <p>La escala física del servicio convive con baja continuidad, dependencia de inversión pública y presión sobre la liquidez.</p>
+        </header>
+
+        <div class="context-editorial-stage">
+          <section class="context-narrative" aria-label="Escala principal del servicio">
+            <span class="context-overline">Escala del servicio</span>
+            <strong class="context-big-number">203,542</strong>
+            <b class="context-big-label">conexiones activas</b>
+            <p>926,798 habitantes urbanos atendidos mediante cuatro gerencias zonales.</p>
+
+            <div class="context-service-pulse">
+              <div><span>Continuidad promedio</span><b>12.94 h/día</b><i style="--pulse:54%"></i></div>
+              <div><span>Presión promedio</span><b>6.42 m.c.a.</b><i style="--pulse:64%"></i></div>
+            </div>
+
+            <div class="context-coverage">
+              <div><span>Agua potable</span><b>79.34% <em>→ 84.92%</em></b></div>
+              <div><span>Alcantarillado</span><b>70.38% <em>→ 74.56%</em></b></div>
+            </div>
+          </section>
+
+          <figure class="hydro-territory" aria-label="Ilustración editorial del sistema hídrico regional de EPSEL">
+            <img src="assets/epsel-territory-editorial-v1.png" alt="Territorio costero conectado desde una fuente y reservorio hacia una planta de tratamiento y tres núcleos urbanos" />
+            <figcaption><b>26 localidades</b><span>en 3 provincias</span></figcaption>
+            <div class="province-signal signal-lambayeque"><i></i><b>Lambayeque · 17%</b><span>34,602 conexiones · 11.2 h/d</span></div>
+            <div class="province-signal signal-chiclayo"><i></i><b>Chiclayo · 76%</b><span>154,692 conexiones · 14.1 h/d</span></div>
+            <div class="province-signal signal-ferrenafe"><i></i><b>Ferreñafe · 7%</b><span>14,248 conexiones · 10.5 h/d</span></div>
+            <span class="source-tag">Tinajones · 320 MMC</span>
+          </figure>
+        </div>
+
+        <div class="context-governance-rail" aria-label="Condiciones institucionales y financieras">
+          <section><span>Regulación</span><b>SUNASS · D.L. 1280</b><small>Metas, tarifas y calidad del servicio.</small></section>
+          <section><span>Gobernanza</span><b>RAT · OTASS</b><small>Intervención vigente y estructura de 4 zonales.</small></section>
+          <section><span>Dirección 2024–2028</span><b>PEI · 4 objetivos SMART</b><small>Cobertura, solvencia, modernización y resiliencia.</small></section>
+          <section class="context-finance"><span>Tensión financiera</span><b>S/ 58.62 M externos</b><small>frente a S/ 2.41 M propios · Mora: S/ 31.27 M</small></section>
         </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=2" target="_blank" rel="noopener">Informe · pp. 2–3</a>
       </article>
@@ -77,166 +145,761 @@
         <header class="slide-head"><h2>Entorno PESTEL de EPSEL</h2><p>Las políticas sectoriales y la tecnología abren oportunidades; el clima, los costos y la regulación elevan la presión operativa.</p></header>
         <div class="pestel-layout">
           <ol class="pestel-list">
-            <li><span class="factor-icon"><svg><use href="#i-building"/></svg></span><b>Político</b><p>Inversión pública y coordinación con OTASS.</p><em>Oportunidad estatal</em></li>
-            <li><span class="factor-icon"><svg><use href="#i-energy"/></svg></span><b>Económico</b><p>Tarifas reguladas y costo energético.</p><em>Presión operativa</em></li>
-            <li><span class="factor-icon"><svg><use href="#i-users"/></svg></span><b>Social</b><p>Crecimiento urbano y brechas de cobertura.</p><em>Mayor exigencia</em></li>
-            <li class="is-key"><span class="factor-icon"><svg><use href="#i-sensor"/></svg></span><b>Tecnológico</b><p>Telemetría, medición y canales digitales.</p><em>Palanca crítica</em></li>
-            <li><span class="factor-icon"><svg><use href="#i-storm"/></svg></span><b>Ecológico</b><p>El Niño, sequía y calidad hídrica.</p><em>Riesgo sistémico</em></li>
-            <li><span class="factor-icon"><svg><use href="#i-scale"/></svg></span><b>Legal</b><p>SUNASS y sistemas de mejora continua.</p><em>Cumplimiento</em></li>
+            <li><span class="factor-icon"><svg><use href="#i-building"/></svg></span><b>Político</b><p>Fondeo público PNSU (S/ 49.17 M) y conducción técnica OTASS para inversión de emergencia.</p><em>Oportunidad estatal</em></li>
+            <li><span class="factor-icon"><svg><use href="#i-energy"/></svg></span><b>Económico</b><p>Tarifas reguladas por PMO SUNASS, morosidad de S/ 31.27 M y alza de costos energéticos.</p><em>Presión financiera</em></li>
+            <li><span class="factor-icon"><svg><use href="#i-users"/></svg></span><b>Social</b><p>926,798 habitantes; brechas de continuidad (12.94 h/día) y aniegos frecuentes en lluvias.</p><em>Demanda ciudadana</em></li>
+            <li class="is-key"><span class="factor-icon"><svg><use href="#i-sensor"/></svg></span><b>Tecnológico</b><p>Macromedición, telemetría SCADA en pozos y reservorios, y canal digital App Gotitas.</p><em>Palanca crítica</em></li>
+            <li><span class="factor-icon"><svg><use href="#i-storm"/></svg></span><b>Ecológico</b><p>El Niño recurrente, colapso de alcantarillado sin drenaje pluvial y sedimentación de fuentes.</p><em>Riesgo climático</em></li>
+            <li><span class="factor-icon"><svg><use href="#i-scale"/></svg></span><b>Legal</b><p>Ley N.° 32041 (gestión de calidad obligatoria), fiscalización SUNASS/OEFA y normativa VMA.</p><em>Marco normativo</em></li>
           </ol>
-          <div class="telemetry-graphic" aria-label="Red inteligente de agua"><div class="graphic-label">Lectura para exponer</div><ul class="pestel-signals"><li><b>Oportunidad</b><span>Financiamiento público y modernización tecnológica.</span></li><li><b>Riesgo</b><span>El Niño, sequía y contaminación de fuentes.</span></li><li><b>Respuesta</b><span>Telemetría, micromedición y atención digital.</span></li></ul><span class="tg-pipe"></span><span class="tg-branch"></span><span class="tg-meter"><svg><use href="#i-sensor"/></svg></span><span class="tg-pulse p1"></span><span class="tg-pulse p2"></span><strong>La tecnología permite anticipar fallas y sostener la continuidad.</strong></div>
+          
+          <div class="scada-system-box" aria-label="Monitoreo y Telemetría Operativa SCADA">
+            <div class="scada-header">
+              <div class="scada-title-wrap">
+                <span class="scada-pill">SISTEMA SCADA Y TELEMETRÍA</span>
+                <strong>Monitoreo Operativo en Tiempo Real</strong>
+              </div>
+              <!-- Mini Ilustración de Manómetro y Red Hidráulica -->
+              <svg viewBox="0 0 90 40" class="scada-mini-gauge" aria-hidden="true">
+                <!-- Tubo base -->
+                <rect x="5" y="24" width="80" height="8" rx="4" fill="#e0f2fe" stroke="#1fa2ff" stroke-width="1.5" />
+                <!-- Ramal vertical al manómetro -->
+                <rect x="41" y="16" width="8" height="10" fill="#0057b8" />
+                <!-- Esfera del manómetro -->
+                <circle cx="45" cy="12" r="11" fill="#ffffff" stroke="#002b5e" stroke-width="2" />
+                <!-- Aguja indicadora -->
+                <line x1="45" y1="12" x2="49" y2="6" stroke="#f7b500" stroke-width="2" stroke-linecap="round" />
+                <circle cx="45" cy="12" r="2" fill="#002b5e" />
+                <!-- Ondas de telemetría -->
+                <path d="M 64 6 A 12 12 0 0 1 64 18" fill="none" stroke="#f7b500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M 69 3 A 16 16 0 0 1 69 21" fill="none" stroke="#f7b500" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+
+            <div class="scada-stages">
+              <div class="scada-stage stage-source">
+                <div class="stage-icon"><svg><use href="#i-database"/></svg></div>
+                <div class="stage-body">
+                  <b>1. SCADA · Fuentes y Pozos</b>
+                  <span>Control de nivel en reservorios y pozos tubulares P-1 al P-12.</span>
+                </div>
+              </div>
+
+              <div class="scada-connector">
+                <svg viewBox="0 0 24 24"><path d="M12 4v14m-5-5l5 5 5-5" stroke="#0057b8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+
+              <div class="scada-stage stage-sensors">
+                <div class="stage-icon"><svg><use href="#i-sensor"/></svg></div>
+                <div class="stage-body">
+                  <b>2. SENSORES · Presión y Redes</b>
+                  <span>Telemedición de presión (6.42 mca) para anticipar roturas (0.14 rot/km-mes).</span>
+                </div>
+              </div>
+
+              <div class="scada-connector">
+                <svg viewBox="0 0 24 24"><path d="M12 4v14m-5-5l5 5 5-5" stroke="#0057b8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+
+              <div class="scada-stage stage-dispatch">
+                <div class="stage-icon"><svg><use href="#i-target"/></svg></div>
+                <div class="stage-body">
+                  <b>3. MEDICIÓN · Macromedición y ANF</b>
+                  <span>Válvulas reguladoras e integración de macromedidores para contener 51.10% ANF.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="scada-callout">
+              <span class="live-dot"></span>
+              <span>Monitoreo 24/7 para estabilizar continuidad frente al estándar regulatorio de 10 mca.</span>
+            </div>
+          </div>
+        </div>
+        <div class="pestel-strip">
+          <div><b>Respaldo Financiero PNSU y OTASS</b><span>Disponibilidad de transferencias por S/ 58.62 M para reposición de colectores y redes críticas frente a S/ 2.41 M de RDR.</span></div>
+          <div><b>Fiscalización y Sanciones Regulatorias</b><span>Supervisión de SUNASS, ANA y OEFA ante densidad de roturas de 0.14 rot/km-mes que triplica la meta de tolerancia de 0.05.</span></div>
+          <div><b>Normativa VMA en Efluentes</b><span>Facultad legal (D.S. 010-2019-VIVIENDA) para fiscalizar y cobrar excesos a comercios e industrias que dañan la red de alcantarillado.</span></div>
+          <div><b>Mitigación de Vulnerabilidad Climática</b><span>Necesidad de drenaje pluvial segregado en Chiclayo para evitar el ingreso masivo de aguas de lluvia a la red sanitaria.</span></div>
         </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=4" target="_blank" rel="noopener">Informe · pp. 4–9</a>
       </article>
 
       <article class="slide slide-porter" data-title="Cinco Fuerzas de Porter" id="slide-4">
         <header class="slide-head"><h2>Presiones competitivas sobre EPSEL</h2><p>La dependencia de proveedores y los sustitutos pesan más que la rivalidad formal, inexistente dentro del ámbito concesionado.</p></header>
-        <div class="porter-map" role="group" aria-label="Cinco fuerzas que presionan a EPSEL">
-          <svg class="porter-links" viewBox="0 0 1000 360" preserveAspectRatio="none" role="img" aria-labelledby="porter-links-title porter-links-desc">
-            <title id="porter-links-title">Presiones competitivas sobre EPSEL</title>
-            <desc id="porter-links-desc">Proveedores, usuarios y regulador, sustitutos, nuevos entrantes y rivalidad directa convergen sobre EPSEL.</desc>
-            <defs><marker id="porter-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8Z"/></marker></defs>
-            <path d="M500 92V112"/>
-            <path d="M270 180H420"/>
-            <path d="M730 180H580"/>
-            <path d="M500 272V248"/>
-            <path d="M790 286H650Q638 286 638 274V224Q638 212 626 212H580"/>
-          </svg>
-          <div class="porter-core"><svg><use href="#i-drop"/></svg><strong>EPSEL</strong><span>Servicio esencial</span></div>
-          <div class="force force-top force-high"><b>Proveedores</b><strong>Alta</strong><span>La inversión depende de S/ 49.17 M del PNSU y S/ 9.45 M de OTASS.</span></div>
-          <div class="force force-right force-medium"><b>Usuarios</b><strong>Bajo / moderado</strong><span>203,542 conexiones; la morosidad llegó a S/ 31.27 M.</span></div>
-          <div class="force force-bottom force-medium"><b>Sustitutos</b><strong>Moderada</strong><span>Fuentes propias y abastecimiento alternativo donde no existe cobertura.</span></div>
-          <div class="force force-left force-low"><b>Nuevos entrantes</b><strong>Nula</strong><span>Barreras legales, regulatorias y alta inversión en redes y plantas.</span></div>
-          <div class="force force-corner force-low"><b>Rivalidad directa</b><strong>Nula</strong><span>Monopolio natural; SUNASS ejerce la presión de desempeño.</span></div>
+        
+        <div class="porter-system-layout" role="region" aria-label="Diagrama de las Cinco Fuerzas de Porter para EPSEL">
+          <!-- Arriba: Proveedores -->
+          <div class="porter-card pcard-top">
+            <div class="pcard-head">
+              <b>Poder de Proveedores</b>
+              <span class="pcard-badge badge-high">Muy Alto · 4.2</span>
+            </div>
+            <p>Inversión condicionada en >95% al fondeo externo de PNSU (S/ 49.17 M) y OTASS (S/ 9.45 M) frente a S/ 2.41 M propios.</p>
+          </div>
+
+          <!-- Conector Superior hacia Hub -->
+          <div class="porter-vector-vert vector-top-in">
+            <span class="vector-tag tag-high">Dependencia de Fondeo Externo</span>
+            <svg viewBox="0 0 20 28"><path d="M10 2v20m-5-5l5 5 5-5" stroke="#dc2626" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- Fila Central: Usuarios -> EPSEL <- Sustitutos -->
+          <div class="porter-middle-row">
+            <!-- Izquierda: Usuarios -->
+            <div class="porter-card pcard-left">
+              <div class="pcard-head">
+                <b>Poder de Usuarios</b>
+                <span class="pcard-badge badge-mid">Moderado · 3.0</span>
+              </div>
+              <p>203,542 conexiones cautivas; cartera morosa de S/ 31.27 M que erosiona la liquidez operativa.</p>
+            </div>
+
+            <div class="porter-vector-horiz vector-left-in">
+              <span class="vector-tag tag-mid">Cartera Morosa</span>
+              <svg viewBox="0 0 28 20"><path d="M2 10h20m-5-5l5 5-5 5" stroke="#f7b500" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+
+            <!-- Hub Central EPSEL -->
+            <div class="porter-hub">
+              <div class="hub-core">
+                <span class="hub-icon"><svg><use href="#i-drop"/></svg></span>
+                <strong>EPSEL S.A.</strong>
+                <small>Monopolio Natural</small>
+                <em>Supervisión SUNASS</em>
+              </div>
+            </div>
+
+            <div class="porter-vector-horiz vector-right-in">
+              <svg viewBox="0 0 28 20"><path d="M26 10H6m5-5l-5 5 5 5" stroke="#f7b500" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="vector-tag tag-mid">Pozos y Cisternas</span>
+            </div>
+
+            <!-- Derecha: Sustitutos -->
+            <div class="porter-card pcard-right">
+              <div class="pcard-head">
+                <b>Amenaza de Sustitutos</b>
+                <span class="pcard-badge badge-mid">Moderada-Alta · 3.8</span>
+              </div>
+              <p>Camiones cisterna informales en periurbano y pozos propios en sector industrial y comercial.</p>
+            </div>
+          </div>
+
+          <!-- Conector Inferior desde Abajo hacia Hub -->
+          <div class="porter-vector-vert vector-bottom-in">
+            <svg viewBox="0 0 20 28"><path d="M10 26V6m-5 5l5-5 5 5" stroke="#60758a" stroke-width="2" stroke-dasharray="3 3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="vector-tag tag-low">Barrera Concesional Regulada</span>
+          </div>
+
+          <!-- Abajo: Nuevos Entrantes y Rivalidad -->
+          <div class="porter-card pcard-bottom">
+            <div class="pcard-head">
+              <b>Nuevos Entrantes y Rivalidad Directa</b>
+              <span class="pcard-badge badge-low">Nula · 1.1 / 1.2</span>
+            </div>
+            <p>Barreras de entrada infranqueables: monopolio natural con exclusividad de concesión en 26 localidades.</p>
+          </div>
+        </div>
+
+        <div class="porter-takeaways">
+          <div><b>1. Supervisión Regulatoria Directa</b><span>La disciplina del servicio no proviene de la competencia sino de las metas de gestión, tarifas y penalidades impuestas por SUNASS.</span></div>
+          <div><b>2. Vulnerabilidad de Capital de Trabajo</b><span>El alto poder de proveedores estatales condiciona la capacidad de renovación de redes al ritmo de aprobaciones burocráticas del gobierno central.</span></div>
+          <div><b>3. Riesgo de Pérdida Comercial</b><span>La falta de continuidad empuja a sectores con capacidad de pago hacia fuentes alternativas privadas no facturadas.</span></div>
         </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=11" target="_blank" rel="noopener">Informe · p. 11</a>
       </article>
 
       <article class="slide slide-data" data-title="Matriz EFE" id="slide-5">
         <header class="slide-head"><h2>Matriz EFE: respuesta externa por debajo del promedio</h2><p>El puntaje 2.15 muestra que la empresa todavía no aprovecha plenamente el financiamiento, la tecnología y la coordinación sectorial.</p></header>
-        <div class="score-story">
-          <div class="score-hero"><span>Puntaje EFE</span><strong>2.15</strong><div class="score-scale"><i></i><b>1.0</b><b>2.5</b><b>4.0</b></div></div>
-          <div class="score-drivers"><h3>Factores con mayor peso</h3><div><span>O1 · 0.45</span><b>Financiamiento del PNSU y OTASS para inversiones.</b></div><div><span>O2 · 0.30</span><b>MRSE para proteger y financiar las fuentes hídricas.</b></div><div><span>A2/A4 · 0.20</span><b>Fiscalización y Agua No Facturada condicionan la respuesta.</b></div><p><strong>Lectura para exponer:</strong> 2.15 está por debajo del punto medio 2.50. EPSEL identifica oportunidades, pero todavía responde con debilidad frente al entorno.</p></div>
+        <div class="efe-grid-layout">
+          <div class="efe-score-panel">
+            <span class="panel-eyebrow">Diagnóstico Global</span>
+            <div class="efe-score-display">
+              <strong>2.15</strong>
+              <span class="score-badge badge-warning">Respuesta Débil</span>
+            </div>
+            <div class="chart-canvas-wrap efe-canvas-wrap">
+              <canvas id="efeChart" aria-label="Indicador de Puntaje EFE 2.15 frente a 2.50" role="img"></canvas>
+            </div>
+            <div class="efe-scale-labels">
+              <span>1.0 Débil</span>
+              <span class="threshold">2.50 Promedio</span>
+              <span>4.0 Fuerte</span>
+            </div>
+            <div class="efe-balance-pills">
+              <div><span>Oportunidades (Peso 0.40)</span><b>Puntaje: 1.20</b></div>
+              <div><span>Amenazas (Peso 0.60)</span><b>Puntaje: 0.95</b></div>
+            </div>
+            <div class="efe-gap-callout">
+              <span>Brecha frente a respuesta media</span>
+              <strong>−0.35</strong>
+              <small>2.15 actual → 2.50 referencia</small>
+            </div>
+            <div class="diagnostic-bar">
+              <strong>Balance de Exposición Externa:</strong> Puntuación de 2.15 frente a la media referencial de 2.50. Las amenazas representan el 60% del peso ponderado, superando la capacidad de respuesta actual de EPSEL.
+            </div>
+          </div>
+
+          <div class="efe-factors-panel panel-opportunities">
+            <div class="panel-header">
+              <svg><use href="#i-drop"/></svg>
+              <div><h3>Oportunidades del Entorno</h3><small>Peso total: 0.40 · Puntaje ponderado: 1.20</small></div>
+            </div>
+            <ul class="efe-factor-list">
+              <li>
+                <div class="factor-head"><b>O1 · Acceso a fondos PNSU y OTASS</b><span>Peso 0.15 · Pts: 0.45</span></div>
+                <p>S/ 49.17 M del PNSU y S/ 9.45 M de OTASS disponibles frente a S/ 2.41 M de RDR.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>O2 · Retribución Hídrica (MRSE)</b><span>Peso 0.10 · Pts: 0.30</span></div>
+                <p>Incorporados al PMO de SUNASS para financiar la conservación de fuentes en cuencas.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>O3 · Integración de prestadores</b><span>Peso 0.08 · Pts: 0.24</span></div>
+                <p>Facultad para fusionar pequeños prestadores y generar economías de escala.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>O4 · Normativa de descargas VMA</b><span>Peso 0.07 · Pts: 0.21</span></div>
+                <p>Control y cobro por exceso a usuarios no domésticos para proteger redes y recaudar.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="efe-factors-panel panel-threats">
+            <div class="panel-header">
+              <svg><use href="#i-storm"/></svg>
+              <div><h3>Amenazas y Presiones</h3><small>Peso total: 0.60 · Puntaje ponderado: 0.95</small></div>
+            </div>
+            <ul class="efe-factor-list">
+              <li>
+                <div class="factor-head"><b>A1 · Lluvias intensas sin drenaje pluvial</b><span>Peso 0.15 · Pts: 0.15</span></div>
+                <p>Sobrecarga hidráulica, atoros masivos y afloramientos durante lluvias de El Niño.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>A2 · Fiscalización SUNASS / OEFA</b><span>Peso 0.10 · Pts: 0.20</span></div>
+                <p>Densidad de roturas de 0.14 rot/km-mes frente a meta de 0.05 eleva sanciones.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>A4 · Agua No Facturada y micromedición</b><span>Peso 0.10 · Pts: 0.20</span></div>
+                <p>51.10% de pérdida en redes y solo 36.16% de conexiones con medidor operativo.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>A5 · Conflictividad judicial laboral</b><span>Peso 0.08 · Pts: 0.16</span></div>
+                <p>1,196 expedientes activos (804 laborales) representan contingencias de liquidez.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>A3 · Inconsistencia demográfica tarifaria</b><span>Peso 0.10 · Pts: 0.10</span></div>
+                <p>El estudio tarifario mantiene 926,798 habitantes constantes, aunque varios distritos registran crecimiento individual.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>A6 · Interferencia de obras viales</b><span>Peso 0.07 · Pts: 0.14</span></div>
+                <p>Obras municipales sin aviso dañan redes de agua y alcantarillado, provocando roturas, pérdidas y afectación del servicio.</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <dl class="evidence-strip"><div><dt>Financiamiento PNSU</dt><dd>S/ 49.17 M</dd></div><div><dt>Agua no facturada</dt><dd>51.10%</dd></div><div><dt>Lectura estratégica</dt><dd>Convertir recursos externos en capacidad operativa medible.</dd></div></dl>
+
+        <dl class="evidence-strip efe-evidence-strip">
+          <div><dt>Fondeo PNSU + OTASS</dt><dd>S/ 58.62 M</dd></div>
+          <div><dt>Agua No Facturada</dt><dd>51.10%</dd></div>
+          <div><dt>Juicios Laborales</dt><dd>804 exp.</dd></div>
+          <div><dt>Densidad de Roturas</dt><dd>0.14 rot/km-m</dd></div>
+          <div><dt>Directriz de Gestión</dt><dd>Acelerar ejecución de inversiones y control de pérdidas antes de nuevas crisis climáticas.</dd></div>
+        </dl>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=12" target="_blank" rel="noopener">Informe · p. 12</a>
       </article>
 
       <article class="slide" data-title="Cadena de Valor" id="slide-6">
         <header class="slide-head"><h2>Cadena de valor: infraestructura fuerte y gestión fragmentada</h2><p>La captación y el tratamiento poseen escala; la distribución, la medición y la atención concentran las pérdidas de valor.</p></header>
         <ol class="value-chain">
-          <li><span><svg><use href="#i-drop"/></svg></span><b>Captación</b><p>Raca Rumi hasta 75 m³/s; Tinajones almacena 320 millones de m³.</p></li>
-          <li><span><svg><use href="#i-building"/></svg></span><b>Producción</b><p>PTAP 1: 700 l/s. PTAP 2: 750 l/s, con control físico y bacteriológico.</p></li>
-          <li class="chain-key"><span><svg><use href="#i-pipe"/></svg></span><b>Distribución</b><p>Cuatro zonas operativas abastecen 28 localidades de Lambayeque.</p></li>
-          <li><span><svg><use href="#i-storm"/></svg></span><b>Saneamiento</b><p>Pampa de Perros y San José tratan 93,850 m³ de aguas residuales al día.</p></li>
-          <li><span><svg><use href="#i-users"/></svg></span><b>Servicio</b><p>Facturación y reclamos dependen de solo 36.16% de micromedición.</p></li>
+          <li><span><svg><use href="#i-drop"/></svg></span><b>Captación</b><p>Raca Rumi hasta 75 m³/s; Reservorio Tinajones almacena 320 MMC y pozos profundos.</p></li>
+          <li><span><svg><use href="#i-building"/></svg></span><b>Producción</b><p>PTAP 1 (700 l/s) y PTAP 2 (750 l/s): 1,450 l/s instalados con control bacteriológico.</p></li>
+          <li class="chain-key"><span><svg><use href="#i-pipe"/></svg></span><b>Distribución</b><p>4 zonales y 26 localidades; infraestructura crítica con 51.10% de ANF y roturas.</p></li>
+          <li><span><svg><use href="#i-users"/></svg></span><b>Comercial</b><p>203,542 conexiones con 36.16% micromedición leída; facturación de S/ 114.65 M.</p></li>
+          <li><span><svg><use href="#i-storm"/></svg></span><b>Saneamiento</b><p>PTAR Pampa de Perros y San José tratan 93,850 m³/d; reclamos gestionados en SICDESA.</p></li>
         </ol>
-        <div class="chain-support"><span>Infraestructura</span><span>Tecnología y datos</span><span>Talento</span><span>Gobierno y control</span></div>
-        <p class="chain-reading"><strong>Lectura para exponer:</strong> la infraestructura de captación y tratamiento es robusta. La pérdida de valor aparece en distribución, medición, cobranza y resolución de reclamos.</p>
-        <div class="speaker-grid chain-actions"><div><b>Cuello de botella</b><span>Distribución y medición: allí se materializan pérdidas, baja presión y menor continuidad.</span></div><div><b>Acción prioritaria</b><span>Integrar macromedición, telemetría y control de fugas con responsables por zona.</span></div><div><b>Resultado esperado</b><span>Más agua facturada, incidencias visibles y decisiones basadas en datos.</span></div></div>
+        <div class="chain-support">
+          <span>Infraestructura: Gerencia General, OCI y Oficina de Control e Integridad</span>
+          <span>Gestión Financiera: GAF y presupuesto de inversión S/ 61.03 M (PNSU/OTASS/RDR)</span>
+          <span>Tecnologías de Información: Jefatura de TIC, App Gotitas y sistema SICDESA</span>
+          <span>Talento y Cumplimiento: 804 juicios laborales, capacitación y fiscalización VMA</span>
+        </div>
+        <div class="diagnostic-bar">
+          <strong>Diagnóstico Operativo de la Cadena:</strong> La robustez de escala en captación y tratamiento (1,450 l/s nominales) se degrada en las fases de distribución y comercialización debido a obsolescencia de redes, baja micromedición y reclamos prolongados.
+        </div>
+        <div class="speaker-grid chain-actions">
+          <div><b>Cuello de Botella en Redes</b><span>El 51.10% de agua no facturada y la densidad de roturas (0.14 rot/km-mes) deterioran el margen financiero y la continuidad en la red secundaria.</span></div>
+          <div><b>Modernización Comercial</b><span>Elevar la micromedición del 36.16% al 85.03% (meta PEI 2028) e integrar telemetría para suprimir facturaciones presuntivas y recuperar cobranza.</span></div>
+          <div><b>Control de Saneamiento</b><span>Fiscalizar descargas no domésticas mediante normativa VMA para prevenir colapsos de colectores y optimizar las PTAR Pampa de Perros y San José.</span></div>
+        </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=13" target="_blank" rel="noopener">Informe · pp. 13–17</a>
       </article>
 
       <article class="slide" data-title="Modelo VRIO" id="slide-7">
         <header class="slide-head"><h2>Ventajas sostenidas y capacidades imitables</h2><p>VRIO separa los activos difíciles de replicar de las plataformas digitales que aún ofrecen una ventaja temporal.</p></header>
         <div class="vrio-table" role="table" aria-label="Evaluación VRIO">
-          <div class="vrio-row vrio-header" role="row"><span>Recurso</span><span>V</span><span>R</span><span>I</span><span>O</span><span>Resultado</span></div>
-          <div class="vrio-row" role="row"><b>Captación y tratamiento</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
-          <div class="vrio-row" role="row"><b>Cobertura y presencia regional</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
-          <div class="vrio-row" role="row"><b>Gotitas y pago virtual</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Ventaja temporal</strong></div>
-          <div class="vrio-row" role="row"><b>SICDESA y gestión de reclamos</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Paridad competitiva</strong></div>
-          <div class="vrio-row" role="row"><b>Trayectoria desde 1930</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
+          <div class="vrio-row vrio-header" role="row"><span>Recurso / Capacidad Institucional</span><span>V</span><span>R</span><span>I</span><span>O</span><span>Implicancia Competitiva</span></div>
+          <div class="vrio-row" role="row"><b>Infraestructura de captación y tratamiento (Tinajones, PTAP 1 y 2)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
+          <div class="vrio-row" role="row"><b>Cobertura geográfica en 4 zonas (24 localidades)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
+          <div class="vrio-row" role="row"><b>Trayectoria histórica en saneamiento (desde 1930)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
+          <div class="vrio-row" role="row"><b>App Gotitas y portal de pagos virtuales</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Ventaja temporal</strong></div>
+          <div class="vrio-row" role="row"><b>Sistema SICDESA (gestión y trazabilidad de reclamos)</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Paridad competitiva</strong></div>
+          <div class="vrio-row" role="row"><b>Programa de Integridad y control formalizado</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Paridad competitiva</strong></div>
+          <div class="vrio-row" role="row"><b>Oficina de Control de Gestión Empresarial e Integridad</b><i class="yes">●</i><i class="yes">●</i><i>~</i><i class="yes">●</i><strong>Ventaja temporal</strong></div>
+          <div class="vrio-row" role="row"><b>Cultura organizacional y principios éticos explícitos</b><i class="yes">●</i><i>~</i><i class="yes">●</i><i>?</i><strong>Potencial sostenible</strong></div>
         </div>
-        <p class="slide-conclusion"><strong>Lectura para exponer:</strong> las ventajas sostenidas provienen de activos difíciles de replicar y de la presencia territorial. Las plataformas digitales aportan valor, pero otras empresas pueden imitarlas.</p>
-        <div class="vrio-guide"><span><b>V</b> genera valor</span><span><b>R</b> es escaso</span><span><b>I</b> es difícil de imitar</span><span><b>O</b> está organizado</span><strong>Decisión: proteger la infraestructura y convertir los canales digitales en capacidades integradas.</strong></div>
+        <div class="speaker-grid vrio-cards">
+          <div><b>1. Núcleo Físico Inimitable</b><span>Tinajones (320 MMC), las PTAP y la red territorial son activos de capital irreplicables en Lambayeque que blindan la operación frente a competidores.</span></div>
+          <div><b>2. Capacidades Digitales Imitables</b><span>Gotitas y SICDESA facilitan la atención ciudadana pero representan estándares sectoriales que cualquier EPS puede implementar sin exclusividad.</span></div>
+          <div><b>3. Mandato de Transformación TI</b><span>Integrar las plataformas comerciales con telemetría SCADA y macromedición para convertir sistemas aislados en capacidades integradas de alto impacto.</span></div>
+        </div>
+        <div class="vrio-guide"><span><b>V</b> genera valor</span><span><b>R</b> es escaso</span><span><b>I</b> es difícil de imitar</span><span><b>O</b> está organizado</span><strong>Decisión: blindar la infraestructura hidráulica y transformar los canales digitales en capacidades integradas.</strong></div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=27" target="_blank" rel="noopener">Informe · p. 27</a>
       </article>
 
       <article class="slide" data-title="FODA Interno" id="slide-8">
         <header class="slide-head"><h2>Fortalezas institucionales y debilidades de servicio</h2><p>EPSEL combina infraestructura y experiencia regional con restricciones en atención, trámites y consolidación de la gestión.</p></header>
         <div class="foda-split">
-          <section><h3>Fortalezas</h3><ul><li><b>Infraestructura:</b> Tinajones y dos plantas de tratamiento.</li><li><b>Cobertura:</b> cuatro zonas operativas y presencia regional.</li><li><b>Experiencia:</b> más de 90 años en saneamiento.</li><li><b>Canales:</b> atención presencial, bancos, web y Gotitas.</li><li><b>Gobierno:</b> alianzas sectoriales y programa de integridad.</li></ul></section>
+          <section>
+            <h3>Fortalezas Institucionales</h3>
+            <ul>
+              <li><b>Infraestructura mayor:</b> Tinajones (320 MMC) y PTAP 1 y 2 con capacidad combinada de 1,450 l/s.</li>
+              <li><b>Cobertura territorial:</b> estructura zonal en 3 provincias abasteciendo 203,542 conexiones.</li>
+              <li><b>Experiencia sectorial:</b> más de 90 años de operación histórica continua en saneamiento regional.</li>
+              <li><b>Canales diversificados:</b> atención bancaria, virtual y aplicación móvil corporativa Gotitas.</li>
+              <li><b>Procesos comerciales:</b> procedimientos y reclamos normados bajo directivas de SUNASS.</li>
+              <li><b>Mecanismo social:</b> rebaja de intereses moratorios a familias en condición de vulnerabilidad.</li>
+              <li><b>Alianzas sectoriales:</b> convenios activos con SEDAPAL, GIZ, SUNASS, INACAL y MVCS.</li>
+              <li><b>Integridad:</b> Programa de Integridad formalmente aprobado para el ejercicio 2026.</li>
+            </ul>
+          </section>
           <div class="foda-axis"><svg><use href="#i-shield"/></svg><span>capacidad</span><i></i><span>fricción</span></div>
-          <section><h3>Debilidades</h3><ul><li><b>Atención:</b> horario presencial restringido a dos días.</li><li><b>Reclamos:</b> pueden superar 90 días hábiles.</li><li><b>Trámites:</b> múltiples requisitos documentales.</li><li><b>Control:</b> área de integridad aún en consolidación.</li><li><b>Gestión:</b> permanencia en el régimen de apoyo de OTASS.</li></ul></section>
+          <section>
+            <h3>Debilidades Operativas</h3>
+            <ul>
+              <li><b>Atención presencial:</b> horario restringido a solo dos días a la semana en la sede central.</li>
+              <li><b>Tiempos de reclamo:</b> procesos que se prolongan hasta 90 días hábiles en apelación TRASS.</li>
+              <li><b>Cartera morosa:</b> S/ 31,266,821.22 inmovilizados en deudas de usuarios de tres meses a más.</li>
+              <li><b>Pérdidas en red:</b> 51.10% de Agua No Facturada y solo 36.16% de micromedición leída.</li>
+              <li><b>Conflictividad legal:</b> 1,196 juicios activos, de los cuales 804 corresponden a litigios laborales.</li>
+              <li><b>Cultura sanitaria:</b> mal uso vecinal del alcantarillado que provoca colapsos y sobrecostos.</li>
+              <li><b>Régimen de intervención:</b> permanencia bajo el Régimen de Apoyo Transitorio (RAT) de OTASS.</li>
+            </ul>
+          </section>
         </div>
-        <div class="speaker-grid foda-reading"><div><b>Qué conservar</b><span>Infraestructura, cobertura regional, experiencia y relaciones sectoriales.</span></div><div><b>Qué corregir</b><span>Tiempos de atención, trazabilidad de reclamos y exceso de requisitos.</span></div><div><b>Implicancia</b><span>La ventaja técnica no se traduce todavía en una experiencia ciudadana consistente.</span></div></div>
+        <div class="speaker-grid foda-reading">
+          <div><b>Ventajas Físicas a Preservar</b><span>Capacidad de potabilización de 1,450 l/s, almacenamiento de Tinajones y exclusividad de concesión territorial en Lambayeque.</span></div>
+          <div><b>Brechas Operativas Críticas</b><span>Restricción en atención ciudadana, trámites burocráticos y demoras de hasta 90 días en resolución de reclamos en TRASS-SUNASS.</span></div>
+          <div><b>Mandato de Transformación TI</b><span>Desarrollar interoperabilidad entre plataformas comerciales y operativas para convertir ventajas físicas en servicio oportuno.</span></div>
+        </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=27" target="_blank" rel="noopener">Informe · pp. 27–28</a>
       </article>
 
       <article class="slide slide-data" data-title="Matriz EFI" id="slide-9">
         <header class="slide-head"><h2>Matriz EFI: capacidad interna moderada</h2><p>El puntaje 2.82 refleja una base favorable para mejorar, sostenida principalmente por infraestructura y cobertura geográfica.</p></header>
-        <div class="efi-layout">
-          <div class="efi-score"><span>Puntaje EFI</span><strong>2.82</strong><p>Capacidad interna por encima del promedio</p><small>Fortalezas: 2.25<br>Debilidades: 0.57</small></div>
-          <div class="balance-bars"><div><span>Peso fortalezas</span><i><b style="--value:65%"></b></i><em>0.65 del total; infraestructura aporta 0.60 y cobertura 0.40.</em></div><div><span>Peso debilidades</span><i><b style="--value:35%"></b></i><em>0.35 del total; atención restringida y reclamos concentran riesgo.</em></div><blockquote><strong>Lectura para exponer:</strong> EPSEL dispone de recursos internos valiosos. El resultado no elimina las debilidades, pero demuestra capacidad para ejecutar un plan de mejora.</blockquote></div>
+        <div class="efi-grid-layout">
+          <div class="efi-score-panel">
+            <span class="panel-eyebrow">Diagnóstico Interno</span>
+            <div class="efe-score-display">
+              <strong>2.82</strong>
+              <span class="score-badge" style="background:#e0f2fd;color:var(--blue);border:1px solid #bce4fb">Capacidad Favorable</span>
+            </div>
+            <div class="chart-canvas-wrap efi-canvas-wrap">
+              <canvas id="efiChart" aria-label="Balance de Factores Internos EFI: Fortalezas vs Debilidades" role="img"></canvas>
+            </div>
+            <div class="efe-scale-labels">
+              <span>1.0 Débil</span>
+              <span class="threshold">2.50 Promedio</span>
+              <span>4.0 Fuerte</span>
+            </div>
+            <div class="efe-balance-pills">
+              <div><span>Fortalezas (Peso 0.65)</span><b>Puntaje: 2.25</b></div>
+              <div><span>Debilidades (Peso 0.35)</span><b>Puntaje: 0.57</b></div>
+            </div>
+            <div class="diagnostic-bar">
+              <strong>Balance de Capacidad Interna:</strong> Puntuación de 2.82 sobre el estándar referencial de 2.50. Las fortalezas en infraestructura y escala física compensan las debilidades en atención presencial y cobranza.
+            </div>
+          </div>
+
+          <div class="efe-factors-panel panel-strengths">
+            <div class="panel-header">
+              <svg><use href="#i-shield"/></svg>
+              <div><h3>Fortalezas Determinantes</h3><small>Peso total: 0.65 · Puntaje ponderado: 2.25</small></div>
+            </div>
+            <ul class="efe-factor-list">
+              <li>
+                <div class="factor-head"><b>F1 · Infraestructura mayor (Tinajones, PTAP 1 y 2)</b><span>Peso 0.15 · Pts: 0.60</span></div>
+                <p>Capacidad instalada de potabilización de 1,450 l/s y reservorio de 320 MMC.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>F2 · Cobertura geográfica en 4 gerencias zonales</b><span>Peso 0.10 · Pts: 0.40</span></div>
+                <p>Atención descentralizada en 26 localidades y 203,542 conexiones activas.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>F3 · Diversificación de canales comerciales</b><span>Peso 0.08 · Pts: 0.24</span></div>
+                <p>App Gotitas, plataforma virtual y convenios de recaudación bancaria.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>F4 · Procesos comerciales normados SUNASS</b><span>Peso 0.08 · Pts: 0.24</span></div>
+                <p>Estandarización procedimental y directivas regulatorias aplicadas.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>F5/F8 · Alianzas y Programa de Integridad 2026</b><span>Peso 0.13 · Pts: 0.39</span></div>
+                <p>Convenios de asistencia técnica (GIZ/SEDAPAL) y control institucional formalizado.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="efe-factors-panel panel-weaknesses">
+            <div class="panel-header">
+              <svg><use href="#i-scale"/></svg>
+              <div><h3>Debilidades Críticas</h3><small>Peso total: 0.35 · Puntaje ponderado: 0.57</small></div>
+            </div>
+            <ul class="efe-factor-list">
+              <li>
+                <div class="factor-head"><b>D4 · Pérdidas físicas y clandestinaje (ANF)</b><span>Peso 0.06 · Pts: 0.12</span></div>
+                <p>51.10% de agua no facturada y solo 36.16% de conexiones con medidor operativo.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>D3 · Elevada cartera comercial morosa</b><span>Peso 0.06 · Pts: 0.12</span></div>
+                <p>S/ 31,266,821.22 inmovilizados en deudas vencidas de más de tres meses.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>D5 · Empresa bajo régimen RAT de OTASS</b><span>Peso 0.05 · Pts: 0.10</span></div>
+                <p>Intervención administrativa originada por insolvencia y fragilidad de gestión.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>D1 · Atención presencial solo 2 días/semana</b><span>Peso 0.07 · Pts: 0.07</span></div>
+                <p>Horario restrictivo en sede central que genera cuellos de botella y descontento.</p>
+              </li>
+              <li>
+                <div class="factor-head"><b>D2 · Reclamos prolongados hasta 90 días</b><span>Peso 0.06 · Pts: 0.06</span></div>
+                <p>Tiempos excesivos de tramitación que escalan a controversias ante TRASS-SUNASS.</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="speaker-grid efi-priorities"><div><b>Base para mejorar</b><span>Infraestructura y presencia territorial sostienen el resultado de 2.82.</span></div><div><b>Riesgo interno</b><span>La atención limitada y los reclamos prolongados deterioran la confianza.</span></div><div><b>Siguiente paso</b><span>Convertir fortalezas físicas en control operativo, digitalización y servicio oportuno.</span></div></div>
+
+        <dl class="evidence-strip efi-evidence-strip">
+          <div><dt>Puntaje EFI</dt><dd>2.82</dd></div>
+          <div><dt>Peso Fortalezas</dt><dd>65% (2.25)</dd></div>
+          <div><dt>Peso Debilidades</dt><dd>35% (0.57)</dd></div>
+          <div><dt>Conexiones Totales</dt><dd>203,542</dd></div>
+          <div><dt>Directriz de Gestión</dt><dd>Aprovechar la base física de gran escala para corregir la fragmentación comercial, la morosidad y los tiempos de atención.</dd></div>
+        </dl>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=28" target="_blank" rel="noopener">Informe · pp. 28–29</a>
       </article>
 
       <article class="slide slide-synthesis" data-title="Síntesis diagnóstica" id="slide-10">
         <header class="slide-head"><h2>Balance diagnóstico: capacidad interna y respuesta externa</h2><p>EPSEL cuenta con activos y experiencia, pero las pérdidas de agua, la medición limitada y la morosidad reducen su capacidad de respuesta.</p></header>
         <div class="synthesis-grid">
-          <section class="anf"><span>Agua no facturada</span><strong>51.10%</strong><i></i><p>La pérdida operativa domina el diagnóstico estratégico.</p><small>Micromedición <b>36.16%</b></small></section>
-          <section class="strategic-balance"><span>Balance estratégico</span><div><b>EFE</b><strong>2.15</strong><i><em style="--value:54%"></em></i><small>Respuesta externa insuficiente</small></div><div><b>EFI</b><strong>2.82</strong><i><em style="--value:71%"></em></i><small>Capacidad interna moderada</small></div><p>El reto: conectar activos, datos y decisiones operativas.</p></section>
-          <section class="smart-network"><span>Red operativa inteligente</span><div class="network-diagram"><i class="network-line nl-a"></i><i class="network-line nl-b"></i><i class="network-line nl-c"></i><b class="network-node nn-a"></b><b class="network-node nn-b"></b><b class="network-node nn-c"></b><div class="network-meter"><svg><use href="#i-sensor"/></svg></div></div><strong>IoT · Telemetría · SCADA</strong><p>Presión, fugas y roturas visibles antes de convertirse en crisis.</p></section>
+          <section class="anf">
+            <span>Agua no facturada</span>
+            <div class="chart-canvas-wrap anf-canvas-wrap">
+              <canvas id="anfChart" aria-label="Gráfico de Agua No Facturada 51.10% vs Facturada 48.90%" role="img"></canvas>
+            </div>
+            <div class="anf-meta">
+              <strong>51.10%</strong>
+              <p>Pérdida en redes de distribución.</p>
+              <small>Micromedición actual: <b>36.16%</b></small>
+            </div>
+          </section>
+          <section class="strategic-balance">
+            <span>Balance estratégico</span>
+            <div class="chart-canvas-wrap balance-canvas-wrap">
+              <canvas id="balanceChart" aria-label="Balance Estratégico EFE 2.15 vs EFI 2.82 frente a referencia 2.50" role="img"></canvas>
+            </div>
+            <p>El reto: conectar activos, datos y decisiones operativas.</p>
+          </section>
+          <section class="smart-network"><span>Red operativa inteligente</span><div class="network-diagram" aria-hidden="true"><div class="network-source"><svg><use href="#i-drop"/></svg></div><i class="network-flow nf-main"></i><i class="network-flow nf-branch"></i><i class="network-flow nf-return"></i><b class="network-point np-source"></b><b class="network-point np-sensor"></b><b class="network-point np-action"></b><div class="network-meter"><svg><use href="#i-sensor"/></svg><small>24/7</small></div><span class="network-label nl-source">Fuente</span><span class="network-label nl-sensor">Sensor</span><span class="network-label nl-action">Acción</span></div><strong>IoT · Telemetría · SCADA</strong><p>Presión, fugas y roturas visibles antes de convertirse en crisis.</p></section>
         </div>
-        <ul class="priority-line diagnostic-facts"><li><b>12.94 h/día</b><span>continuidad promedio</span></li><li><b>6.42 m.c.a.</b><span>presión promedio</span></li><li><b>S/ 31.27 M</b><span>deuda de tres meses a más</span></li></ul>
+        <ul class="priority-line diagnostic-facts">
+          <li><b>12.94 h/día</b><span>continuidad promedio</span></li>
+          <li><b>6.42 m.c.a.</b><span>presión promedio</span></li>
+          <li><b>S/ 31.27 M</b><span>deuda de 3 meses a más</span></li>
+        </ul>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=56" target="_blank" rel="noopener">Síntesis del informe</a>
       </article>
 
       <article class="slide" data-title="Definición Estratégica" id="slide-11">
-        <header class="slide-head"><h2>Definición estratégica y brechas de formulación</h2><p>La misión y la visión expresan el servicio público, aunque omiten capacidades internas y un horizonte temporal verificable.</p></header>
-        <div class="definition-layout">
-          <section><span>Misión</span><blockquote>Brindar agua potable y saneamiento con eficiencia, calidad, sostenibilidad y equidad.</blockquote><p>Define usuarios, servicios y filosofía. No menciona tecnología, territorio ni desarrollo del personal.</p></section>
-          <section><span>Visión</span><blockquote>Ser reconocida por un servicio eficiente y responsable con la sociedad y el ambiente.</blockquote><p>Es clara y breve, pero no establece el año ni etapas para medir el reconocimiento esperado.</p></section>
-          <div class="values-line"><b>Trabajo en equipo</b><b>Honestidad</b><b>Protección ambiental</b><b>Calidad</b><b>Responsabilidad</b><b>Respeto</b></div>
-          <div class="fce-list"><span>Ampliación y calidad</span><span>Sostenibilidad financiera</span><span>Ejecución de inversiones</span><span>Gestión y talento</span><span>Riesgos de desastres</span></div>
-          <p class="definition-note"><strong>Lectura para exponer:</strong> los factores clave sí recogen las prioridades operativas. La formulación institucional debe incorporar transformación digital, talento y una meta temporal.</p>
-          <div class="speaker-callout"><b>Criterio de mejora</b><span>Una definición estratégica completa debe conectar propósito público, capacidades digitales, desarrollo del personal y resultados verificables hacia 2028.</span></div>
+        <header class="slide-head"><h2>Definición estratégica y brechas de formulación</h2><p>La misión y la visión expresan el servicio público, pero requieren integrar capacidades tecnológicas, talento y un horizonte temporal verificable.</p></header>
+        <div class="definition-grid-box">
+          <section class="definition-card">
+            <span>Misión Institucional Actual</span>
+            <blockquote>"Brindar servicios de agua potable y saneamiento en el ámbito de su administración con eficiencia, calidad, sostenibilidad y equidad, contribuyendo a la salud y bienestar de la población."</blockquote>
+            <div class="gap-analysis">
+              <b>Brechas Técnicas Identificadas</b>
+              Omite la adopción de tecnologías de información, la cobertura territorial descentralizada en 4 zonas y el desarrollo de competencias del talento humano.
+            </div>
+          </section>
+          <section class="definition-card">
+            <span>Visión Institucional Actual</span>
+            <blockquote>"Ser una empresa líder y modelo a nivel regional y nacional, reconocida por brindar servicios de agua potable y saneamiento eficientes, con calidad y responsabilidad social y ambiental."</blockquote>
+            <div class="gap-analysis">
+              <b>Brechas Técnicas Identificadas</b>
+              Carece de horizonte temporal explícito (meta definida al 2028 o 2030) y de indicadores cuantitativos verificables de posicionamiento y satisfacción ciudadana.
+            </div>
+          </section>
+        </div>
+
+        <div class="fce-grid">
+          <div class="fce-item"><b>FCE 1 · Cobertura y Calidad</b><span>Meta PEI 2028:</span><strong>Agua 84.92% · 14.14 h/d</strong></div>
+          <div class="fce-item"><b>FCE 2 · Sostenibilidad Financiera</b><span>Recaudación ordinaria:</span><strong>S/ 135.5 M · Mora &lt; S/ 8.9 M</strong></div>
+          <div class="fce-item"><b>FCE 3 · Ejecución de Inversiones</b><span>Fondos PNSU y OTASS:</span><strong>100% de ejecución (S/ 58.6 M)</strong></div>
+          <div class="fce-item"><b>FCE 4 · Gestión y Talento</b><span>Modernización interna:</span><strong>97% capacitado · 100% digital</strong></div>
+          <div class="fce-item"><b>FCE 5 · Resiliencia Climática</b><span>Riesgo de desastres:</span><strong>Planes PGRD anuales vigentes</strong></div>
+        </div>
+
+        <div class="values-line">
+          <b>Trabajo en equipo</b><b>Honestidad</b><b>Protección ambiental</b><b>Calidad y mejora continua</b><b>Responsabilidad social</b><b>Respeto al usuario</b>
+        </div>
+
+        <div class="diagnostic-bar">
+          <strong>Alineamiento Estratégico Requerido:</strong> La reformulación de la misión y visión debe articular el propósito de servicio público con la transformación digital, la profesionalización del personal y metas cuantitativas hacia el 2028.
         </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=30" target="_blank" rel="noopener">Informe · pp. 30–34</a>
       </article>
 
       <article class="slide" data-title="Objetivos Estratégicos" id="slide-12">
-        <header class="slide-head"><h2>Objetivos estratégicos 2024–2028</h2><p>Cada objetivo cuenta con indicadores anuales que permiten seguir el acceso, las finanzas, la gestión institucional y la resiliencia.</p></header>
-        <ol class="objectives">
-          <li><b>OE1</b><div><strong>Acceso y calidad</strong><p>Ampliar agua potable y alcantarillado sin descuidar continuidad y presión.</p><small>2028: agua 84.92% · alcantarillado 74.56% · continuidad 14.14 h/día</small></div><svg><use href="#i-drop"/></svg></li>
-          <li><b>OE2</b><div><strong>Gestión financiera</strong><p>Mejorar ingresos, reducir pérdidas y elevar la ejecución de inversiones.</p><small>2028: ANF 38.24% · micromedición 85.03% · deuda S/ 8.92 M</small></div><svg><use href="#i-chart"/></svg></li>
-          <li><b>OE3</b><div><strong>Fortalecimiento institucional</strong><p>Desarrollar al personal, digitalizar información y ordenar los procesos.</p><small>2028: personal capacitado 97% · legajos digitalizados 100%</small></div><svg><use href="#i-database"/></svg></li>
-          <li><b>OE4</b><div><strong>Gestión del riesgo</strong><p>Mantener planes operativos y recursos para responder a eventos naturales y antrópicos.</p><small>Meta: un plan de riesgos vigente por año durante 2024–2028</small></div><svg><use href="#i-shield"/></svg></li>
-        </ol>
-        <p class="objective-reading"><strong>Secuencia para exponer:</strong> OE1 define el valor entregado al ciudadano; OE2 asegura los recursos; OE3 desarrolla la capacidad de ejecución; y OE4 protege la continuidad ante riesgos.</p>
+        <header class="slide-head"><h2>Objetivos estratégicos 2024–2028</h2><p>Cuatro objetivos articulados con metas SMART anuales para ampliar el acceso, recuperar la solvencia, modernizar procesos y mitigar riesgos.</p></header>
+        <div class="objectives-grid">
+          <div class="objective-card">
+            <div class="obj-badge"><svg><use href="#i-drop"/></svg><span>OE1</span></div>
+            <div class="obj-content">
+              <h3>Acceso, Calidad y Continuidad del Servicio</h3>
+              <p>Ampliación de cobertura y optimización de presiones hidráulicas en el ámbito urbano de Lambayeque.</p>
+              <dl class="obj-metrics">
+                <div><dt>Agua Potable</dt><dd>79.34% ➔ 84.92%</dd></div>
+                <div><dt>Alcantarillado</dt><dd>70.38% ➔ 74.56%</dd></div>
+                <div><dt>Continuidad Promedio</dt><dd>12.94 h/d ➔ 14.14 h/d</dd></div>
+                <div><dt>Presión en Red</dt><dd>6.42 ➔ 10.00 mca</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="objective-card">
+            <div class="obj-badge"><svg><use href="#i-chart"/></svg><span>OE2</span></div>
+            <div class="obj-content">
+              <h3>Sostenibilidad Económica y Financiera</h3>
+              <p>Contención de pérdidas físicas y comerciales, recuperación de cartera morosa y aumento de recaudación.</p>
+              <dl class="obj-metrics">
+                <div><dt>Agua No Facturada</dt><dd>51.10% ➔ 38.24%</dd></div>
+                <div><dt>Micromedición</dt><dd>36.16% ➔ 85.03%</dd></div>
+                <div><dt>Mora &gt; 3 Meses</dt><dd>S/ 31.2 M ➔ S/ 8.92 M</dd></div>
+                <div><dt>Recaudación Anual</dt><dd>S/ 114.6 M ➔ S/ 135.5 M</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="objective-card">
+            <div class="obj-badge"><svg><use href="#i-database"/></svg><span>OE3</span></div>
+            <div class="obj-content">
+              <h3>Modernización Institucional y Competencias</h3>
+              <p>Transformación digital de expedientes, estandarización de procesos y capacitación técnica de personal.</p>
+              <dl class="obj-metrics">
+                <div><dt>Personal Capacitado</dt><dd>45.0% ➔ 97.0%</dd></div>
+                <div><dt>Legajos Digitales</dt><dd>15.0% ➔ 100.0%</dd></div>
+                <div><dt>Gestión de Calidad</dt><dd>Ley 32041 (ISO 9001)</dd></div>
+                <div><dt>Integridad</dt><dd>100% Medidas 2026</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="objective-card">
+            <div class="obj-badge"><svg><use href="#i-shield"/></svg><span>OE4</span></div>
+            <div class="obj-content">
+              <h3>Gestión del Riesgo de Desastres y Resiliencia</h3>
+              <p>Mitigación ante Fenómeno El Niño, protección de captaciones y ejecución del Fondo de Reserva para contingencias.</p>
+              <dl class="obj-metrics">
+                <div><dt>Planes PGRD Vigentes</dt><dd>1 Plan Anual (100%)</dd></div>
+                <div><dt>Fondo de Reserva</dt><dd>100% de Ejecución</dd></div>
+                <div><dt>Fichas de Emergencia</dt><dd>Aprobación expedita</dd></div>
+                <div><dt>Catálogo GIS</dt><dd>Redes y colectores</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="diagnostic-bar">
+          <strong>Articulación Sistémica PEI 2024–2028:</strong> El cumplimiento de cobertura (OE1) exige recursos de eficiencia comercial (OE2), ejecutados por personal calificado (OE3) sobre infraestructura protegida ante riesgos climáticos (OE4).
+        </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=35" target="_blank" rel="noopener">Informe · pp. 35–43</a>
       </article>
 
       <article class="slide" data-title="FODA Cruzada" id="slide-13">
-        <header class="slide-head"><h2>Estrategias derivadas del FODA cruzado</h2><p>El cruce TOWS convierte las fortalezas y debilidades en líneas de acción frente a las oportunidades y amenazas del entorno.</p></header>
-        <div class="tows-map">
-          <section class="tows-fo"><span>FO · Escalar</span><ul><li>Financiar ampliación y modernización con PNSU y OTASS.</li><li>Incorporar telemetría y macromedición en producción y redes.</li></ul></section>
-          <section class="tows-do"><span>DO · Transformar</span><ul><li>Digitalizar trámites y seguimiento de reclamos.</li><li>Consolidar control de gestión con asistencia técnica e indicadores.</li></ul></section>
-          <section class="tows-fa"><span>FA · Proteger</span><ul><li>Usar la infraestructura para sostener continuidad ante El Niño.</li><li>Fortalecer procesos comerciales frente a exigencias regulatorias.</li></ul></section>
-          <section class="tows-da"><span>DA · Corregir</span><ul><li>Mejorar educación sanitaria en zonas vulnerables.</li><li>Asegurar trazabilidad de cobranzas y cumplimiento de metas.</li></ul></section>
-          <div class="tows-center"><svg><use href="#i-target"/></svg><b>Foco</b><span>eficiencia + confianza</span></div>
+        <header class="slide-head"><h2>Estrategias derivadas del FODA cruzado</h2><p>El cruce TOWS convierte las fortalezas y debilidades en líneas de acción frente a las oportunidades y amenazas del entorno regional.</p></header>
+        <div class="tows-matrix-box">
+          <section class="tows-quad tows-fo">
+            <div class="tows-quad-head"><strong>Estrategias FO (Max-Max)</strong><span>Escalar</span></div>
+            <ul class="tows-list">
+              <li><b>FO1:</b> Ejecutar obras de ampliación y modernización con fondos transferidos por PNSU (S/ 49.17 M) y OTASS (S/ 9.45 M).</li>
+              <li><b>FO2:</b> Potenciar canales digitales (App Gotitas y pagos web) para ampliar atención remota y reducir trámites presenciales.</li>
+              <li><b>FO3:</b> Incorporar telemetría SCADA y macromedición para control en tiempo real de pozos y plantas de tratamiento.</li>
+            </ul>
+          </section>
+
+          <section class="tows-quad tows-do">
+            <div class="tows-quad-head"><strong>Estrategias DO (Min-Max)</strong><span>Transformar</span></div>
+            <ul class="tows-list">
+              <li><b>DO1:</b> Digitalizar y simplificar trámites administrativos para eliminar la restricción presencial de solo dos días por semana.</li>
+              <li><b>DO2:</b> Articular asistencia técnica con SUNASS y OTASS para agilizar procedimientos y acortar tiempos de reclamo.</li>
+              <li><b>DO4:</b> Cumplir metas de gestión del Régimen de Apoyo Transitorio (RAT) para superar causales de intervención externa.</li>
+            </ul>
+          </section>
+
+          <section class="tows-quad tows-fa">
+            <div class="tows-quad-head"><strong>Estrategias FA (Max-Min)</strong><span>Proteger</span></div>
+            <ul class="tows-list">
+              <li><b>FA1:</b> Blindar infraestructura mayor de captación (Tinajones y Raca Rumi) para sostener continuidad ante El Niño.</li>
+              <li><b>FA2:</b> Fortalecer procesos comerciales y de calidad para responder eficientemente a fiscalizaciones de SUNASS y OEFA.</li>
+              <li><b>FA3:</b> Integrar macromedición masiva con detección de clandestinaje para frenar el 51.10% de Agua No Facturada.</li>
+            </ul>
+          </section>
+
+          <section class="tows-quad tows-da">
+            <div class="tows-quad-head"><strong>Estrategias DA (Min-Min)</strong><span>Corregir</span></div>
+            <ul class="tows-list">
+              <li><b>DA1:</b> Desarrollar programas de educación sanitaria y fiscalización VMA para prevenir colapsos en redes de alcantarillado.</li>
+              <li><b>DA3:</b> Reforzar trazabilidad y seguridad en cobranzas para neutralizar riesgos de suplantación y pérdidas comerciales.</li>
+              <li><b>DA4:</b> Focalizar inversiones de reposición en sectores con mayor morosidad (S/ 31.27 M) y alta densidad de roturas.</li>
+            </ul>
+          </section>
         </div>
-        <div class="tows-sequence"><b>Orden sugerido de ejecución</b><span>1. Medir pérdidas y desempeño</span><span>2. Integrar trámites y reclamos</span><span>3. Ejecutar inversiones priorizadas</span><span>4. Comunicar resultados al ciudadano</span></div>
+
+        <div class="tows-roadmap">
+          <div><b>Paso 1 · Contención</b><span>Medición y detección de fugas para reducir el 51.10% de pérdidas físicas.</span></div>
+          <div><b>Paso 2 · Omnicanalidad</b><span>Convergencia total de App Gotitas y SICDESA para agilizar reclamos.</span></div>
+          <div><b>Paso 3 · Inversión Fondeada</b><span>Ejecución del 100% de los S/ 58.62 M transferidos por PNSU y OTASS.</span></div>
+          <div><b>Paso 4 · Resiliencia</b><span>Planes de contingencia y georreferenciación GIS ante Fenómeno El Niño.</span></div>
+        </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=44" target="_blank" rel="noopener">Informe · pp. 44–45</a>
       </article>
 
       <article class="slide" data-title="Matriz PEYEA" id="slide-14">
         <header class="slide-head"><h2>Posición competitiva y prioridades de inversión</h2><p>La fortaleza de la industria sostiene a EPSEL, mientras la inestabilidad del entorno y las brechas operativas limitan su avance.</p></header>
         <div class="peyea-layout">
-          <div class="peyea-chart" role="img" aria-label="Matriz PEYEA, posición competitiva"><span class="axis axis-x"></span><span class="axis axis-y"></span><b class="quad q1">Conservador</b><b class="quad q2">Agresivo</b><b class="quad q3">Defensivo</b><b class="quad q4">Competitivo</b><i class="peyea-point"></i><em class="vector"></em></div>
-          <div class="peyea-reading"><span>Coordenadas</span><div><b>X</b><strong>+1.16</strong><b>Y</b><strong>−2.00</strong></div><h3>Cuadrante competitivo</h3><dl class="peyea-dimensions"><div><dt>FF</dt><dd>+2.33</dd></div><div><dt>FI</dt><dd>+4.83</dd></div><div><dt>VC</dt><dd>−3.67</dd></div><div><dt>EE</dt><dd>−4.33</dd></div></dl><ul><li>Invertir en medición y control de pérdidas.</li><li>Recuperar cobranza y ejecución de inversiones.</li><li>Proteger continuidad ante eventos climáticos.</li></ul></div>
+          <div class="peyea-chart-box">
+            <div class="peyea-chart-head">
+              <div class="chart-toggle-group" role="tablist" aria-label="Modo de visualización PEYEA">
+                <button type="button" class="chart-toggle is-active" id="peyeaModeVector" role="tab" aria-selected="true">Vector Cartesiano</button>
+                <button type="button" class="chart-toggle" id="peyeaModeRadar" role="tab" aria-selected="false">Radar 4 Factores</button>
+              </div>
+              <span class="peyea-tag-quad">Cuadrante Competitivo</span>
+            </div>
+            <div class="chart-canvas-wrap peyea-canvas-wrap">
+              <canvas id="peyeaChart" aria-label="Matriz PEYEA interactiva mostrando posición competitiva (+1.16, -2.00)" role="img"></canvas>
+            </div>
+          </div>
+          <div class="peyea-reading">
+            <span>Coordenadas PEYEA</span>
+            <div><b>X</b><strong>+1.16</strong><b>Y</b><strong>−2.00</strong></div>
+            <h3>Cuadrante Competitivo</h3>
+            <dl class="peyea-dimensions">
+              <div><dt>FF (Financiera)</dt><dd>+2.33</dd></div>
+              <div><dt>FI (Industria)</dt><dd>+4.83</dd></div>
+              <div><dt>VC (Ventaja)</dt><dd>−3.67</dd></div>
+              <div><dt>EE (Entorno)</dt><dd>−4.33</dd></div>
+            </dl>
+            <ul>
+              <li><b>Inversión focalizada:</b> Priorizar medición y sustitución de redes antes de expansión.</li>
+              <li><b>Recuperación comercial:</b> Saneamiento de morosidad y regularización de clandestinaje.</li>
+              <li><b>Protección hidráulica:</b> Asegurar continuidad operativa frente a eventos climáticos.</li>
+            </ul>
+          </div>
         </div>
-        <p class="peyea-note"><strong>Lectura para exponer:</strong> la posición competitiva no invita a una expansión indiscriminada. Recomienda invertir de forma selectiva en capacidades que reduzcan pérdidas, estabilicen ingresos y protejan el servicio.</p>
+        <div class="peyea-directive">
+          <strong>Directriz Estratégica PEYEA · Cuadrante Competitivo (+1.16, −2.00):</strong>
+          <p>La alta fortaleza de la industria (+4.83) contrasta con la inestabilidad del entorno (−4.33) y la debilidad financiera (+2.33). La formulación estratégica descarta una expansión territorial agresiva; la prioridad corporativa radica en inversión selectiva para contener pérdidas físicas (51.10% ANF), masificar micromedición y estabilizar ingresos operativos.</p>
+        </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=46" target="_blank" rel="noopener">Informe · pp. 46–52</a>
       </article>
 
       <article class="slide" data-title="Matriz BCG" id="slide-15">
-        <header class="slide-head"><h2>Trayectoria institucional y recuperación operativa</h2><p>La matriz BCG se usa como una lectura evolutiva de EPSEL y no como un portafolio comercial tradicional.</p></header>
+        <header class="slide-head"><h2>Trayectoria institucional y recuperación operativa</h2><p>La matriz BCG refleja la evolución histórica de EPSEL hacia su actual fase de estabilización y salida del régimen transitorio.</p></header>
         <div class="bcg-layout">
-          <div class="bcg-chart"><span class="bcg-axis-x">Estabilidad operativa</span><span class="bcg-axis-y">Capacidad de crecimiento</span><section class="bcg-star"><b>Estrella</b><p>1996–2016</p><small>Consolidación como EPS y expansión de la base de usuarios.</small></section><section class="bcg-question"><b>Interrogante</b><p>1930–1996</p><small>Formación institucional y transferencias sucesivas de gestión.</small></section><section class="bcg-cow"><b>Vaca</b><p>2016–2019</p><small>Las conexiones pasaron de 156,170 a 168,521.</small></section><section class="bcg-risk"><b>Recuperación</b><p>Desde 2017</p><small>RAT orientado a solvencia, gobierno y continuidad del servicio.</small></section><i class="bcg-route"></i></div>
-          <aside class="bcg-message"><svg><use href="#i-compass"/></svg><h3>Lectura para exponer</h3><p>EPSEL necesita recuperar estabilidad operativa antes de volver a una etapa de crecimiento sostenido.</p><ul><li>Reducir el Agua No Facturada.</li><li>Integrar Gotitas y SICDESA.</li><li>Ejecutar inversiones con metas verificables.</li></ul><strong>Prioridad inmediata: control de pérdidas y ejecución medible</strong></aside>
+          <div class="bcg-visual-box" role="region" aria-label="Matriz BCG de EPSEL">
+            <!-- Timeline Ribbon Evolutivo -->
+            <div class="bcg-timeline-ribbon" aria-label="Línea de tiempo de trayectoria estratégica de EPSEL">
+              <div class="ribbon-step step-q"><span class="step-num">1</span><b>1930–96</b><small>Interrogante</small></div>
+              <div class="ribbon-arrow">➔</div>
+              <div class="ribbon-step step-s"><span class="step-num">2</span><b>1996–16</b><small>Estrella</small></div>
+              <div class="ribbon-arrow">➔</div>
+              <div class="ribbon-step step-c"><span class="step-num">3</span><b>2016–19</b><small>Vaca</small></div>
+              <div class="ribbon-arrow">➔</div>
+              <div class="ribbon-step step-r is-active"><span class="step-num">4</span><b>Desde 2017</b><small>RAT Actual</small></div>
+              <div class="ribbon-arrow">➔</div>
+              <div class="ribbon-step step-goal"><span class="step-num">5</span><b>Meta 2028</b><small>Salida PEI</small></div>
+            </div>
+
+            <!-- Ejes de la Matriz -->
+            <div class="bcg-axis-labels">
+              <span class="axis-y-tag">Tasa de Crecimiento del Mercado / Demanda ▲</span>
+              <span class="axis-x-tag">Alta ◄ Participación de Mercado / Solvencia ► Baja</span>
+            </div>
+
+            <div class="bcg-quad-grid">
+              <!-- Cuadrante Estrella (Arriba Izquierda: Alta Cuota, Alto Crecimiento) -->
+              <div class="bcg-quad-card bcg-quad-star">
+                <div class="bcg-quad-head">
+                  <span class="bcg-quad-pill pill-star">Estrella · Fase II</span>
+                  <b class="quad-year">1996–2016</b>
+                </div>
+                <strong class="quad-title">Consolidación y Expansión EPS</strong>
+                <p>Consolidación institucional como empresa de saneamiento y expansión sostenida incorporando 26 localidades de Lambayeque.</p>
+                <div class="quad-stat"><span>Redes matrices</span><b>+168k Conexiones</b></div>
+              </div>
+
+              <!-- Cuadrante Interrogante (Arriba Derecha: Baja Cuota, Alto Crecimiento) -->
+              <div class="bcg-quad-card bcg-quad-question">
+                <div class="bcg-quad-head">
+                  <span class="bcg-quad-pill pill-question">Interrogante · Fase I</span>
+                  <b class="quad-year">1930–1996</b>
+                </div>
+                <strong class="quad-title">Formación y Transferencias</strong>
+                <p>Origen en Juntas de Saneamiento y administración municipal temprana con financiamiento incipiente y cobertura fragmentada.</p>
+                <div class="quad-stat"><span>Inicio operacional</span><b>Gestión Municipal</b></div>
+              </div>
+
+              <!-- Cuadrante Vaca Lechera (Abajo Izquierda: Alta Cuota, Bajo Crecimiento) -->
+              <div class="bcg-quad-card bcg-quad-cow">
+                <div class="bcg-quad-head">
+                  <span class="bcg-quad-pill pill-cow">Vaca · Fase III</span>
+                  <b class="quad-year">2016–2019</b>
+                </div>
+                <strong class="quad-title">Madurez Vegetativa y Rezago</strong>
+                <p>Base de clientes consolidada (156k a 168k conexiones) pero con rezago crónico de mantenimiento, roturas y pérdidas físicas de agua.</p>
+                <div class="quad-stat"><span>Crecimiento inercial</span><b>Rezago de Inversión</b></div>
+              </div>
+
+              <!-- Cuadrante Recuperación / RAT (Abajo Derecha: Baja Solvencia, Bajo Crecimiento) -->
+              <div class="bcg-quad-card bcg-quad-rat is-current">
+                <div class="bcg-quad-head">
+                  <span class="bcg-quad-pill pill-rat">Recuperación (RAT) · Fase IV</span>
+                  <span class="current-badge">Fase Actual</span>
+                </div>
+                <strong class="quad-title">Intervención OTASS y Reflotamiento</strong>
+                <p>Ingreso al Régimen de Apoyo Transitorio por insolvencia financiera (R.M. 262-2017). Rescate técnico para gobernar el 51.10% de ANF.</p>
+                <div class="quad-stat stat-active"><span>Rumbo estratégico</span><b>Hacia Salida PEI 2028</b></div>
+              </div>
+            </div>
+          </div>
+          <aside class="bcg-message">
+            <svg><use href="#i-compass"/></svg>
+            <h3>Diagnóstico y Salida del RAT</h3>
+            <p>EPSEL requiere restablecer equilibrio financiero y control de pérdidas antes de retomar etapas de expansión del servicio.</p>
+            <div class="bcg-points">
+              <span>▪ Reducción urgente del 51.10% de Agua No Facturada.</span>
+              <span>▪ Convergencia entre App Gotitas y sistema de reclamos SICDESA.</span>
+              <span>▪ Ejecución del 100% de fondos de inversión del PNSU y OTASS.</span>
+            </div>
+            <strong>Foco estratégico: Estabilidad técnica y solvencia financiera</strong>
+          </aside>
+        </div>
+        <div class="conclusions-strip">
+          <div><b>1. Transformación de TIC y SCADA</b><span>Implementar telemetría en tiempo real, IoT en pozos y monitoreo de presiones para controlar el 51.10% de ANF y alcanzar 85.03% de micromedición.</span></div>
+          <div><b>2. Omnicanalidad Gotitas-SICDESA</b><span>Superar la atención presencial de solo 2 días a la semana integrando expedientes en línea y reduciendo plazos de reclamos a menos de 15 días.</span></div>
+          <div><b>3. Catálogo GIS ante El Niño</b><span>Desplegar un Sistema de Información Geográfica corporativo que georreferencie colectores vulnerables y acelere la ejecución de fondos de emergencia.</span></div>
+          <div><b>4. Focalización de Inversiones</b><span>Concentrar los S/ 58.62 M transferidos por PNSU y OTASS en sectores hidráulicos críticos con mayor morosidad, roturas y antigüedad de tuberías.</span></div>
         </div>
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=53" target="_blank" rel="noopener">Informe · pp. 53–56</a>
       </article>
@@ -249,6 +912,7 @@
     </nav>
   </section>
 </main>
+<script src="chart.min.js"></script>
 <script src="presentation.js"></script>
 </body>
 </html>

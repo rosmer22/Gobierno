@@ -153,68 +153,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             <li><span class="factor-icon"><svg><use href="#i-scale"/></svg></span><b>Legal</b><p>Ley N.° 32041 (gestión de calidad obligatoria), fiscalización SUNASS/OEFA y normativa VMA.</p><em>Marco normativo</em></li>
           </ol>
           
-          <div class="scada-system-box" aria-label="Monitoreo y Telemetría Operativa SCADA">
-            <div class="scada-header">
-              <div class="scada-title-wrap">
-                <span class="scada-pill">SISTEMA SCADA Y TELEMETRÍA</span>
-                <strong>Monitoreo Operativo en Tiempo Real</strong>
-              </div>
-              <!-- Mini Ilustración de Manómetro y Red Hidráulica -->
-              <svg viewBox="0 0 90 40" class="scada-mini-gauge" aria-hidden="true">
-                <!-- Tubo base -->
-                <rect x="5" y="24" width="80" height="8" rx="4" fill="#e0f2fe" stroke="#1fa2ff" stroke-width="1.5" />
-                <!-- Ramal vertical al manómetro -->
-                <rect x="41" y="16" width="8" height="10" fill="#0057b8" />
-                <!-- Esfera del manómetro -->
-                <circle cx="45" cy="12" r="11" fill="#ffffff" stroke="#002b5e" stroke-width="2" />
-                <!-- Aguja indicadora -->
-                <line x1="45" y1="12" x2="49" y2="6" stroke="#f7b500" stroke-width="2" stroke-linecap="round" />
-                <circle cx="45" cy="12" r="2" fill="#002b5e" />
-                <!-- Ondas de telemetría -->
-                <path d="M 64 6 A 12 12 0 0 1 64 18" fill="none" stroke="#f7b500" stroke-width="1.5" stroke-linecap="round" />
-                <path d="M 69 3 A 16 16 0 0 1 69 21" fill="none" stroke="#f7b500" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2" />
-              </svg>
-            </div>
-
-            <div class="scada-stages">
-              <div class="scada-stage stage-source">
-                <div class="stage-icon"><svg><use href="#i-database"/></svg></div>
-                <div class="stage-body">
-                  <b>1. SCADA · Fuentes y Pozos</b>
-                  <span>Control de nivel en reservorios y pozos tubulares P-1 al P-12.</span>
-                </div>
-              </div>
-
-              <div class="scada-connector">
-                <svg viewBox="0 0 24 24"><path d="M12 4v14m-5-5l5 5 5-5" stroke="#0057b8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-
-              <div class="scada-stage stage-sensors">
-                <div class="stage-icon"><svg><use href="#i-sensor"/></svg></div>
-                <div class="stage-body">
-                  <b>2. SENSORES · Presión y Redes</b>
-                  <span>Telemedición de presión (6.42 mca) para anticipar roturas (0.14 rot/km-mes).</span>
-                </div>
-              </div>
-
-              <div class="scada-connector">
-                <svg viewBox="0 0 24 24"><path d="M12 4v14m-5-5l5 5 5-5" stroke="#0057b8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-
-              <div class="scada-stage stage-dispatch">
-                <div class="stage-icon"><svg><use href="#i-target"/></svg></div>
-                <div class="stage-body">
-                  <b>3. MEDICIÓN · Macromedición y ANF</b>
-                  <span>Válvulas reguladoras e integración de macromedidores para contener 51.10% ANF.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="scada-callout">
-              <span class="live-dot"></span>
-              <span>Monitoreo 24/7 para estabilizar continuidad frente al estándar regulatorio de 10 mca.</span>
-            </div>
-          </div>
+          <aside class="pestel-response" aria-label="Respuesta operativa ante el entorno">
+            <span class="response-label">Respuesta operativa</span>
+            <strong class="response-number">51.10%</strong>
+            <p class="response-caption">de agua no facturada concentra el riesgo que la telemetría debe ayudar a controlar.</p>
+            <ol>
+              <li><b>01 · Fuentes y pozos</b><span>SCADA registra niveles en reservorios y pozos P-1 al P-12.</span></li>
+              <li><b>02 · Presión y redes</b><span>Sensores vigilan 6.42 mca y alertan sobre roturas (0.14 rot/km-mes).</span></li>
+              <li><b>03 · Medición</b><span>Macromedidores y válvulas aportan datos para reducir pérdidas.</span></li>
+            </ol>
+            <small>Referencia de presión regulatoria: 10 mca</small>
+          </aside>
         </div>
         <div class="pestel-strip">
           <div><b>Respaldo Financiero PNSU y OTASS</b><span>Disponibilidad de transferencias por S/ 58.62 M para reposición de colectores y redes críticas frente a S/ 2.41 M de RDR.</span></div>
@@ -440,7 +389,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <div class="vrio-table" role="table" aria-label="Evaluación VRIO">
           <div class="vrio-row vrio-header" role="row"><span>Recurso / Capacidad Institucional</span><span>V</span><span>R</span><span>I</span><span>O</span><span>Implicancia Competitiva</span></div>
           <div class="vrio-row" role="row"><b>Infraestructura de captación y tratamiento (Tinajones, PTAP 1 y 2)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
-          <div class="vrio-row" role="row"><b>Cobertura geográfica en 4 zonas (24 localidades)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
+          <div class="vrio-row" role="row"><b>Cobertura geográfica en 4 zonas (26 localidades)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
           <div class="vrio-row" role="row"><b>Trayectoria histórica en saneamiento (desde 1930)</b><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><i class="yes">●</i><strong class="best">Ventaja sostenible</strong></div>
           <div class="vrio-row" role="row"><b>App Gotitas y portal de pagos virtuales</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Ventaja temporal</strong></div>
           <div class="vrio-row" role="row"><b>Sistema SICDESA (gestión y trazabilidad de reclamos)</b><i class="yes">●</i><i>○</i><i>○</i><i class="yes">●</i><strong>Paridad competitiva</strong></div>
@@ -814,10 +763,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <a class="slide-source" href="docs/Informe_Actividad_1_Formulacion_Estrategica.pdf#page=46" target="_blank" rel="noopener">Informe · pp. 46–52</a>
       </article>
 
-      <article class="slide" data-title="Matriz BCG" id="slide-15">
-        <header class="slide-head"><h2>Trayectoria institucional y recuperación operativa</h2><p>La matriz BCG refleja la evolución histórica de EPSEL hacia su actual fase de estabilización y salida del régimen transitorio.</p></header>
+      <article class="slide" data-title="Trayectoria institucional" id="slide-15">
+        <header class="slide-head"><h2>Trayectoria institucional y recuperación operativa</h2><p>Cuatro etapas resumen el crecimiento de EPSEL y explican la prioridad actual: estabilizar el servicio y las finanzas.</p></header>
         <div class="bcg-layout">
-          <div class="bcg-visual-box" role="region" aria-label="Matriz BCG de EPSEL">
+          <div class="bcg-visual-box" role="region" aria-label="Trayectoria estratégica de EPSEL por etapas">
             <!-- Timeline Ribbon Evolutivo -->
             <div class="bcg-timeline-ribbon" aria-label="Línea de tiempo de trayectoria estratégica de EPSEL">
               <div class="ribbon-step step-q"><span class="step-num">1</span><b>1930–96</b><small>Interrogante</small></div>
@@ -826,15 +775,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               <div class="ribbon-arrow">➔</div>
               <div class="ribbon-step step-c"><span class="step-num">3</span><b>2016–19</b><small>Vaca</small></div>
               <div class="ribbon-arrow">➔</div>
-              <div class="ribbon-step step-r is-active"><span class="step-num">4</span><b>Desde 2017</b><small>RAT Actual</small></div>
+              <div class="ribbon-step step-r is-active"><span class="step-num">4</span><b>Desde 2017</b><small>RAT superpuesto</small></div>
               <div class="ribbon-arrow">➔</div>
               <div class="ribbon-step step-goal"><span class="step-num">5</span><b>Meta 2028</b><small>Salida PEI</small></div>
-            </div>
-
-            <!-- Ejes de la Matriz -->
-            <div class="bcg-axis-labels">
-              <span class="axis-y-tag">Tasa de Crecimiento del Mercado / Demanda ▲</span>
-              <span class="axis-x-tag">Alta ◄ Participación de Mercado / Solvencia ► Baja</span>
             </div>
 
             <div class="bcg-quad-grid">

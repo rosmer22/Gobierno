@@ -39,13 +39,10 @@
 
   const navButtons = [...nav.querySelectorAll('button')];
 
-  // En las matrices densas se conservan todos los encabezados a la vista y se
-  // despliega una sola explicación a la vez. Esto acompasa la exposición.
+  // La matriz EFE conserva su índice de factores como ayuda opcional. El resto
+  // de las diapositivas muestra toda la información sin requerir interacción.
   const focusGroups = [
-    { selector: '.pestel-list', items: ':scope > li', detail: 'p, em' },
-    { selector: '.efe-factor-list', items: ':scope > li', detail: 'p' },
-    { selector: '.objectives-grid', items: ':scope > .objective-card', detail: '.obj-content > p' },
-    { selector: '.bcg-quad-grid', items: ':scope > .bcg-quad-card', detail: 'p' }
+    { selector: '#slide-5 .efe-factor-list', items: ':scope > li', detail: 'p' }
   ];
 
   focusGroups.forEach(config => {
@@ -83,7 +80,7 @@
 
   // Lectura progresiva integrada: los datos secundarios permanecen dentro de
   // la composición y ya no dependen de una bandeja superpuesta.
-  document.querySelectorAll('#slide-2 .context-strip-4, #slide-3 .pestel-strip, #slide-6 .chain-actions').forEach(group => {
+  document.querySelectorAll('#slide-2 .context-strip-4, #slide-6 .chain-actions').forEach(group => {
     const items = [...group.children];
     group.classList.add('integrated-reveal');
     const select = selected => {
